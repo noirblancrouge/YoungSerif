@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="fi" format="1">
+  <advance width="699.581"/>
+  <unicode hex="FB01"/>
+  <outline>
+    <contour>
+      <point x="670.86" y="60" type="line" smooth="yes"/>
+      <point x="621.97" y="60"/>
+      <point x="597.34" y="100.74"/>
+      <point x="597.34" y="155.08" type="curve" smooth="yes"/>
+      <point x="597.34" y="529.71" type="line"/>
+      <point x="596.37" y="531.21"/>
+      <point x="596.28" y="531.33"/>
+      <point x="595" y="531.33" type="curve" smooth="yes"/>
+      <point x="592.65" y="531.32" type="line" smooth="yes"/>
+      <point x="591.11" y="531.31"/>
+      <point x="586.02" y="529.5"/>
+      <point x="584.19" y="528.94" type="curve" smooth="yes"/>
+      <point x="557.37" y="520.61"/>
+      <point x="470.63" y="499.05"/>
+      <point x="385.42" y="499.99" type="curve" smooth="yes"/>
+      <point x="240.05" y="499.99" type="line"/>
+      <point x="240.05" y="565.53" type="line" smooth="yes"/>
+      <point x="240.48" y="665.03"/>
+      <point x="275.87" y="745.43"/>
+      <point x="367.81" y="745.43" type="curve" smooth="yes"/>
+      <point x="428.45" y="745.43"/>
+      <point x="468.57" y="711.64"/>
+      <point x="468.57" y="649.78" type="curve" smooth="yes"/>
+      <point x="468.57" y="633.17"/>
+      <point x="463.82" y="613.7"/>
+      <point x="452.48" y="591.75" type="curve" smooth="yes"/>
+      <point x="450.613" y="588.138"/>
+      <point x="449.629" y="584.197"/>
+      <point x="449.629" y="580.747" type="curve" smooth="yes"/>
+      <point x="449.629" y="575.438"/>
+      <point x="451.959" y="571.29"/>
+      <point x="456.99" y="571.29" type="curve"/>
+      <point x="459.45" y="571.58" type="line"/>
+      <point x="564.33" y="595.18" type="line" smooth="yes"/>
+      <point x="579.21" y="598.53"/>
+      <point x="585.04" y="603.51"/>
+      <point x="589.41" y="614.24" type="curve" smooth="yes"/>
+      <point x="595.24" y="628.54"/>
+      <point x="598.06" y="642.56"/>
+      <point x="598.06" y="655.96" type="curve" smooth="yes"/>
+      <point x="598.06" y="740.09"/>
+      <point x="523.35" y="800.15"/>
+      <point x="382.53" y="800.15" type="curve" smooth="yes"/>
+      <point x="177.22" y="800.15"/>
+      <point x="101.46" y="626.95"/>
+      <point x="101.46" y="508.33" type="curve" smooth="yes"/>
+      <point x="101.59" y="500" type="line"/>
+      <point x="27.4499" y="500" type="line" smooth="yes"/>
+      <point x="17.6999" y="500"/>
+      <point x="12.4499" y="494.75"/>
+      <point x="12.4499" y="485" type="curve" smooth="yes"/>
+      <point x="12.4499" y="455" type="line" smooth="yes"/>
+      <point x="12.4499" y="445.25"/>
+      <point x="17.6999" y="440"/>
+      <point x="27.4499" y="440" type="curve" smooth="yes"/>
+      <point x="99.9399" y="440"/>
+      <point x="99.9999" y="379.98"/>
+      <point x="99.9999" y="326.39" type="curve" smooth="yes"/>
+      <point x="99.9999" y="155.08" type="line" smooth="yes"/>
+      <point x="100.97" y="100.74"/>
+      <point x="76.3399" y="60.0001"/>
+      <point x="27.4499" y="60.0001" type="curve" smooth="yes"/>
+      <point x="17.6999" y="60.0001"/>
+      <point x="12.4499" y="54.7501"/>
+      <point x="12.4499" y="45.0001" type="curve" smooth="yes"/>
+      <point x="12.4499" y="15.0001" type="line" smooth="yes"/>
+      <point x="12.4499" y="5.2501"/>
+      <point x="17.6999" y="9.79901e-05"/>
+      <point x="27.4499" y="9.79901e-05" type="curve" smooth="yes"/>
+      <point x="314.07" y="9.79901e-05" type="line" smooth="yes"/>
+      <point x="323.82" y="9.79901e-05"/>
+      <point x="329.07" y="5.2501"/>
+      <point x="329.07" y="15.0001" type="curve" smooth="yes"/>
+      <point x="329.07" y="45.0001" type="line" smooth="yes"/>
+      <point x="329.07" y="54.7501"/>
+      <point x="323.82" y="60.0001"/>
+      <point x="314.07" y="60.0001" type="curve" smooth="yes"/>
+      <point x="265.18" y="60.0001"/>
+      <point x="240.55" y="100.74"/>
+      <point x="240.55" y="155.08" type="curve" smooth="yes"/>
+      <point x="240.55" y="427" type="line"/>
+      <point x="385.06" y="427" type="line" smooth="yes"/>
+      <point x="454.1" y="427"/>
+      <point x="460.79" y="375.77"/>
+      <point x="460.79" y="331.18" type="curve" smooth="yes"/>
+      <point x="460.79" y="155.08" type="line" smooth="yes"/>
+      <point x="461.76" y="100.74"/>
+      <point x="437.13" y="60.0001"/>
+      <point x="388.24" y="60.0001" type="curve" smooth="yes"/>
+      <point x="386.53" y="60.0001" type="line" smooth="yes"/>
+      <point x="377.27" y="60.0001"/>
+      <point x="371.48" y="55.2401"/>
+      <point x="371.48" y="46.4301" type="curve"/>
+      <point x="371.53" y="45.0001" type="line"/>
+      <point x="371.53" y="15.0001" type="line" smooth="yes"/>
+      <point x="371.53" y="5.3471"/>
+      <point x="378.637" y="0.105198"/>
+      <point x="388.24" y="0.0018978" type="curve" smooth="yes"/>
+      <point x="671.3" y="9.78039e-05" type="line" smooth="yes"/>
+      <point x="681.05" y="9.78039e-05"/>
+      <point x="688.3" y="5.2501"/>
+      <point x="688.3" y="15.0001" type="curve" smooth="yes"/>
+      <point x="688.3" y="45.0001" type="line" smooth="yes"/>
+      <point x="688.3" y="54.7501"/>
+      <point x="683.05" y="60.0001"/>
+      <point x="673.3" y="60.0001" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>
