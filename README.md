@@ -1,4 +1,4 @@
-# Young Serif
+# YoungSerif
 
 YoungSerif is a medium serif typeface.
 
