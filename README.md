@@ -3,7 +3,7 @@
 YoungSerif is a medium serif typeface.
 
 ## Specimen
-![Specimen 1](https://raw.github.com/bsozoo/YoungSerif/master/documentation/images/ sample1.jpg)
+![Specimen 1](https://raw.github.com/bsozoo/YoungSerif/master/documentation/images/sample1.jpg)
 
 ## License
 
