@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="macron" format="2">
+  <advance width="600.0"/>
+  <unicode hex="00AF"/>
+  <note>
+macron
+</note>
+  <outline>
+    <contour>
+      <point x="441.18" y="624.88" type="curve" smooth="yes"/>
+      <point x="441.18" y="685.0" type="line" smooth="yes"/>
+      <point x="441.18" y="694.75"/>
+      <point x="435.93" y="700.0"/>
+      <point x="426.18" y="700.0" type="curve" smooth="yes"/>
+      <point x="158.7" y="700.0" type="line" smooth="yes"/>
+      <point x="148.95" y="700.0"/>
+      <point x="143.7" y="694.75"/>
+      <point x="143.7" y="685.0" type="curve" smooth="yes"/>
+      <point x="143.7" y="624.88" type="line" smooth="yes"/>
+      <point x="143.7" y="615.13"/>
+      <point x="148.95" y="609.88"/>
+      <point x="158.7" y="609.88" type="curve" smooth="yes"/>
+      <point x="426.18" y="609.88" type="line" smooth="yes"/>
+      <point x="435.93" y="609.88"/>
+      <point x="441.18" y="615.13"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>place</key>
+          <array>
+            <real>609.88</real>
+            <real>90.12</real>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>place</key>
+          <array>
+            <real>143.7</real>
+            <real>297.48</real>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

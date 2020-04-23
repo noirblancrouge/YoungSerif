@@ -1,0 +1,105 @@
+# Prefix: lookup_0
+lookup lookup_0 {
+sub L periodcentered by Ldot;
+sub l periodcentered by ldot;
+} lookup_0;
+
+
+# Prefix: lookup_1
+lookup lookup_1 {
+sub A by ordfeminine;
+sub O by ordmasculine;
+sub a by ordfeminine;
+sub o by ordmasculine;
+} lookup_1;
+
+
+# Prefix: Languagesystems
+# automatic
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+languagesystem latn CAT;
+languagesystem latn MOL;
+languagesystem latn ROM;
+
+
+feature aalt {
+# automatic
+feature dnom;
+feature frac;
+feature locl;
+feature numr;
+feature ordn;
+feature sups;
+
+} aalt;
+
+feature dnom {
+sub two by two.dnom;
+sub four by four.dnom;
+
+} dnom;
+
+feature frac {
+sub one slash two by onehalf;
+sub one slash four by onequarter;
+sub three slash four by threequarters;
+
+} frac;
+
+feature liga {
+sub f i by fi;
+sub f l by fl;
+
+} liga;
+
+feature locl {
+script latn;
+language CAT ;
+sub l' lookup lookup_0 periodcentered' lookup lookup_0 l ;
+sub L' lookup lookup_0 periodcentered' lookup lookup_0 L ;
+language MOL ;
+sub Scedilla by Scommaaccent;
+sub Tcedilla by uni021A;
+sub scedilla by scommaaccent;
+sub tcedilla by uni021B;
+language ROM ;
+sub Scedilla by Scommaaccent;
+sub Tcedilla by uni021A;
+sub scedilla by scommaaccent;
+sub tcedilla by uni021B;
+
+} locl;
+
+feature numr {
+sub one by one.numr;
+sub three by three.numr;
+
+} numr;
+
+feature ordn {
+sub [zero one two three four five six seven eight nine] [A a]' lookup lookup_1 ;
+sub [zero one two three four five six seven eight nine] [O o]' lookup lookup_1 ;
+
+} ordn;
+
+feature sups {
+sub one by onesuperior;
+sub two by twosuperior;
+sub three by threesuperior;
+
+} sups;
+
+feature cpsp {
+pos [A Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE B C Cacute Ccaron Ccedilla Cdotaccent D Eth Dcaron Dcroat E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F G Gbreve Gcommaaccent Gdotaccent H Hbar I IJ Iacute Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek J K Kcommaaccent L Lacute Lcaron Lcommaaccent Ldot Lslash M N Nacute Ncaron Ncommaaccent Eng Ntilde O Oacute Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent S Sacute Scaron Scedilla Scommaaccent T Tbar Tcaron Tcedilla uni021A U Uacute Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent Delta Omega] <5 0 10 0>;
+
+} cpsp;
+
+table GDEF {
+  # automatic
+  GlyphClassDef
+    , # Base
+    , # Liga
+    [commaaccentcomb], # Mark
+    ;
+} GDEF;

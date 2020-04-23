@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Delta" format="2">
+  <advance width="618.0"/>
+  <unicode hex="0394"/>
+  <note>
+Delta
+</note>
+  <outline>
+    <contour>
+      <point x="299.3" y="699.31" type="curve" smooth="yes"/>
+      <point x="11.65" y="17.47" type="line" smooth="yes"/>
+      <point x="7.23" y="7.02"/>
+      <point x="11.89" y="0.0"/>
+      <point x="23.24" y="0.0" type="curve" smooth="yes"/>
+      <point x="594.74" y="0.0" type="line" smooth="yes"/>
+      <point x="603.23" y="0.0"/>
+      <point x="607.98" y="3.94"/>
+      <point x="607.98" y="10.3" type="curve" smooth="yes"/>
+      <point x="607.98" y="12.44"/>
+      <point x="607.44" y="14.85"/>
+      <point x="606.34" y="17.47" type="curve" smooth="yes"/>
+      <point x="319.34" y="699.3" type="line" smooth="yes"/>
+      <point x="316.74" y="705.47"/>
+      <point x="313.03" y="708.55"/>
+      <point x="309.32" y="708.55" type="curve" smooth="yes"/>
+      <point x="305.61" y="708.55"/>
+      <point x="301.9" y="705.47"/>
+    </contour>
+    <contour>
+      <point x="309.21" y="463.79" type="line"/>
+      <point x="462.62" y="99.32" type="line"/>
+      <point x="155.44" y="99.32" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>place</key>
+          <array>
+            <real>0.0</real>
+            <real>99.32</real>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>place</key>
+          <array>
+            <real>9.99</real>
+            <real>597.99</real>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

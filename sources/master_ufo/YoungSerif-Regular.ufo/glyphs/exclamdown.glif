@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="exclamdown" format="2">
+  <advance width="374.0"/>
+  <unicode hex="00A1"/>
+  <note>
+exclamdown
+</note>
+  <outline>
+    <contour>
+      <point x="138.58" y="373.3" type="curve" smooth="yes"/>
+      <point x="99.48" y="412.68" type="line" smooth="yes"/>
+      <point x="86.84" y="425.32"/>
+      <point x="80.52" y="438.45"/>
+      <point x="80.52" y="451.57" type="curve" smooth="yes"/>
+      <point x="80.52" y="464.7"/>
+      <point x="86.84" y="477.82"/>
+      <point x="99.48" y="490.46" type="curve" smooth="yes"/>
+      <point x="138.58" y="529.55" type="line" smooth="yes"/>
+      <point x="151.22" y="542.05"/>
+      <point x="164.35" y="548.3"/>
+      <point x="177.47" y="548.3" type="curve" smooth="yes"/>
+      <point x="190.6" y="548.3"/>
+      <point x="203.72" y="542.05"/>
+      <point x="216.36" y="529.55" type="curve" smooth="yes"/>
+      <point x="255.46" y="490.46" type="line" smooth="yes"/>
+      <point x="268.1" y="477.82"/>
+      <point x="274.41" y="464.7"/>
+      <point x="274.41" y="451.57" type="curve" smooth="yes"/>
+      <point x="274.41" y="438.45"/>
+      <point x="268.1" y="425.32"/>
+      <point x="255.46" y="412.68" type="curve" smooth="yes"/>
+      <point x="216.36" y="373.58" type="line" smooth="yes"/>
+      <point x="203.68" y="360.9"/>
+      <point x="190.52" y="354.58"/>
+      <point x="177.36" y="354.58" type="curve" smooth="yes"/>
+      <point x="164.27" y="354.58"/>
+      <point x="151.18" y="360.83"/>
+    </contour>
+    <contour>
+      <point x="138.58" y="-226.32" type="curve" smooth="yes"/>
+      <point x="99.48" y="-187.22" type="line" smooth="yes"/>
+      <point x="87.09" y="-174.83"/>
+      <point x="80.51" y="-161.97"/>
+      <point x="80.51" y="-149.11" type="curve" smooth="yes"/>
+      <point x="80.51" y="-96.88"/>
+      <point x="117.48" y="41.69"/>
+      <point x="128.12" y="179.01" type="curve" smooth="yes"/>
+      <point x="132.76" y="238.92"/>
+      <point x="132.96" y="247.64"/>
+      <point x="133.13" y="256.01" type="curve" smooth="yes"/>
+      <point x="133.29" y="264.16"/>
+      <point x="138.16" y="268.4"/>
+      <point x="146.3" y="268.4" type="curve" smooth="yes"/>
+      <point x="208.82" y="268.4" type="line" smooth="yes"/>
+      <point x="216.96" y="268.4"/>
+      <point x="221.83" y="264.16"/>
+      <point x="221.99" y="256.01" type="curve" smooth="yes"/>
+      <point x="222.16" y="247.63"/>
+      <point x="222.34" y="238.91"/>
+      <point x="227.0" y="178.99" type="curve" smooth="yes"/>
+      <point x="237.52" y="43.63"/>
+      <point x="274.42" y="-97.03"/>
+      <point x="274.42" y="-149.26" type="curve" smooth="yes"/>
+      <point x="274.42" y="-162.07"/>
+      <point x="267.79" y="-174.88"/>
+      <point x="255.46" y="-187.22" type="curve" smooth="yes"/>
+      <point x="216.36" y="-226.32" type="line" smooth="yes"/>
+      <point x="203.72" y="-238.96"/>
+      <point x="190.59" y="-245.28"/>
+      <point x="177.47" y="-245.28" type="curve" smooth="yes"/>
+      <point x="164.34" y="-245.28"/>
+      <point x="151.22" y="-238.96"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>place</key>
+          <array>
+            <real>268.4</real>
+            <real>86.18</real>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>place</key>
+          <array>
+            <real>80.51</real>
+            <real>193.91</real>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

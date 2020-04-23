@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="circumflex" format="2">
+  <advance width="600.0"/>
+  <unicode hex="02C6"/>
+  <note>
+circumflex
+</note>
+  <outline>
+    <contour>
+      <point x="476.52" y="644.17" type="curve" smooth="yes"/>
+      <point x="475.22" y="654.21"/>
+      <point x="470.62" y="659.27"/>
+      <point x="463.84" y="661.83" type="curve" smooth="yes"/>
+      <point x="398.37" y="686.76"/>
+      <point x="364.18" y="705.38"/>
+      <point x="283.16" y="768.74" type="curve"/>
+      <point x="202.15" y="705.38"/>
+      <point x="167.96" y="686.76"/>
+      <point x="102.48" y="661.83" type="curve" smooth="yes"/>
+      <point x="95.7" y="659.27"/>
+      <point x="91.11" y="654.21"/>
+      <point x="89.8" y="644.17" type="curve" smooth="yes"/>
+      <point x="88.96" y="637.69"/>
+      <point x="88.53" y="631.27"/>
+      <point x="88.53" y="625.03" type="curve" smooth="yes"/>
+      <point x="88.53" y="586.83"/>
+      <point x="104.55" y="555.24"/>
+      <point x="139.44" y="555.24" type="curve" smooth="yes"/>
+      <point x="203.62" y="555.24"/>
+      <point x="254.37" y="617.28"/>
+      <point x="283.16" y="672.87" type="curve"/>
+      <point x="311.96" y="617.28"/>
+      <point x="362.71" y="555.24"/>
+      <point x="426.89" y="555.24" type="curve" smooth="yes"/>
+      <point x="461.77" y="555.24"/>
+      <point x="477.79" y="586.83"/>
+      <point x="477.79" y="625.03" type="curve" smooth="yes"/>
+      <point x="477.79" y="631.27"/>
+      <point x="477.36" y="637.69"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.hints</key>
+      <array>
+        <dict>
+          <key>horizontal</key>
+          <true/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>place</key>
+          <array>
+            <real>555.24</real>
+            <real>213.5</real>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+        <dict>
+          <key>horizontal</key>
+          <false/>
+          <key>options</key>
+          <integer>0</integer>
+          <key>place</key>
+          <array>
+            <real>88.53</real>
+            <real>389.26</real>
+          </array>
+          <key>stem</key>
+          <integer>-2</integer>
+          <key>type</key>
+          <string>Stem</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

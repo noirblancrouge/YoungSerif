@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="commaaccentcomb" format="2">
+  <unicode hex="0326"/>
+  <note>
+commaaccentcomb
+</note>
+  <outline>
+    <contour>
+      <point x="375.26" y="-47.2" type="curve" smooth="yes"/>
+      <point x="336.17" y="-8.29" type="line" smooth="yes"/>
+      <point x="323.49" y="4.39"/>
+      <point x="310.33" y="10.71"/>
+      <point x="297.17" y="10.71" type="curve" smooth="yes"/>
+      <point x="284.08" y="10.71"/>
+      <point x="270.99" y="4.46"/>
+      <point x="258.39" y="-8.01" type="curve" smooth="yes"/>
+      <point x="219.29" y="-47.1" type="line" smooth="yes"/>
+      <point x="206.65" y="-59.74"/>
+      <point x="200.33" y="-72.87"/>
+      <point x="200.33" y="-85.99" type="curve" smooth="yes"/>
+      <point x="200.33" y="-99.12"/>
+      <point x="206.65" y="-112.24"/>
+      <point x="219.29" y="-124.88" type="curve" smooth="yes"/>
+      <point x="257.41" y="-163.0" type="line"/>
+      <point x="258.39" y="-163.97" type="line" smooth="yes"/>
+      <point x="264.12" y="-169.7"/>
+      <point x="266.79" y="-177.52"/>
+      <point x="266.79" y="-186.74" type="curve" smooth="yes"/>
+      <point x="266.79" y="-218.24"/>
+      <point x="235.57" y="-266.13"/>
+      <point x="187.7" y="-303.26" type="curve"/>
+      <point x="216.61" y="-316.26"/>
+      <point x="222.48" y="-318.26"/>
+      <point x="227.39" y="-318.26" type="curve" smooth="yes"/>
+      <point x="250.43" y="-318.26"/>
+      <point x="376.69" y="-211.26"/>
+      <point x="393.1" y="-132.26" type="curve" smooth="yes"/>
+      <point x="395.38" y="-121.27"/>
+      <point x="396.4" y="-111.43"/>
+      <point x="396.4" y="-102.61" type="curve" smooth="yes"/>
+      <point x="396.4" y="-76.55"/>
+      <point x="387.45" y="-59.3"/>
+    </contour>
+  </outline>
+</glyph>

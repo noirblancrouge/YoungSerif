@@ -1,1 +1,1 @@
-Copyright (c) 2013, Bastien Sozeau | http://sozoo.fr | http://uplaod.fr | <contact@sozoo.fr>, YoungSerif.
+Copyright (c) 2019 by Noir Blanc Rouge. https://noirblancrouge.com | <contact@noirblancrouge.com> | YoungSerif.
