@@ -1,9 +1,14 @@
 # YoungSerif
 
-YoungSerif is a medium serif typeface.
+![Cover](https://raw.githubusercontent.com/noirblancrouge/YoungSerif/master/documentation/images/young-serif-cover.jpg)
 
-## Specimen
-![Specimen 1](https://raw.githubusercontent.com/noirblancrouge/YoungSerif/master/documentation/images/sample.jpg)
+Young Serif is a heavy weight old style serif typeface, taking inspiration from Plantin Infant or ITC Italian Old Style. 
+The lowercase b and f feature rounded curves, adding a tender and generous quality to this font.
+
+Originally distributed by graphic design studio Uplaod, Young Serif is open source and licensed under OFL, the SIL Open Font License allows the licensed fonts to be used, studied, modified and redistributed freely as long as they are not sold by themselves.
+
+
+![Specimen](https://raw.githubusercontent.com/noirblancrouge/YoungSerif/master/documentation/images/young-serif-charset.jpg)
 
 ## License
 

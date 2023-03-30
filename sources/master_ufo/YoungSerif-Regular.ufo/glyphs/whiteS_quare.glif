@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="whiteSquare" format="2">
+  <advance width="568"/>
+  <unicode hex="25A1"/>
+  <outline>
+    <contour>
+      <point x="59" y="6" type="curve" smooth="yes"/>
+      <point x="509" y="6" type="line" smooth="yes"/>
+      <point x="514" y="6"/>
+      <point x="518" y="10"/>
+      <point x="518" y="15" type="curve" smooth="yes"/>
+      <point x="518" y="465" type="line" smooth="yes"/>
+      <point x="518" y="470"/>
+      <point x="514" y="474"/>
+      <point x="509" y="474" type="curve" smooth="yes"/>
+      <point x="59" y="474" type="line" smooth="yes"/>
+      <point x="54" y="474"/>
+      <point x="50" y="470"/>
+      <point x="50" y="465" type="curve" smooth="yes"/>
+      <point x="50" y="15" type="line" smooth="yes"/>
+      <point x="50" y="10"/>
+      <point x="54" y="6"/>
+    </contour>
+    <contour>
+      <point x="146" y="102" type="line"/>
+      <point x="146" y="378" type="line"/>
+      <point x="422" y="378" type="line"/>
+      <point x="422" y="102" type="line"/>
+    </contour>
+  </outline>
+</glyph>

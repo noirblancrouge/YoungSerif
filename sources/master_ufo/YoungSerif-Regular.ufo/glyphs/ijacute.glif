@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ijacute" format="2">
+  <advance width="676"/>
+  <anchor x="174" y="0" name="bottom"/>
+  <anchor x="315" y="0" name="ogonek"/>
+  <anchor x="174" y="500" name="top_1"/>
+  <anchor x="480" y="500" name="top_2"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="acute" xOffset="-84"/>
+    <component base="jdotless" xOffset="306"/>
+    <component base="acute" xOffset="222"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>2</integer>
+          <key>name</key>
+          <string>jdotless</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>3</integer>
+          <key>name</key>
+          <string>acute</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

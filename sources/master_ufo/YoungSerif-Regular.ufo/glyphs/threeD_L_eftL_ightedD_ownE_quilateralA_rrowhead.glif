@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="threeDLeftLightedDownEquilateralArrowhead" format="2">
+  <advance width="691"/>
+  <unicode hex="2B9B"/>
+  <outline>
+    <contour>
+      <point x="345" y="292" type="line"/>
+      <point x="345" y="36" type="line"/>
+      <point x="148" y="377" type="line"/>
+    </contour>
+    <contour>
+      <point x="617" y="465" type="curve" smooth="yes"/>
+      <point x="345" y="346" type="line"/>
+      <point x="73" y="465" type="line" smooth="yes"/>
+      <point x="71" y="466"/>
+      <point x="68" y="467"/>
+      <point x="65" y="467" type="curve" smooth="yes"/>
+      <point x="56" y="467"/>
+      <point x="50" y="459"/>
+      <point x="50" y="451" type="curve" smooth="yes"/>
+      <point x="50" y="447"/>
+      <point x="51" y="443"/>
+      <point x="53" y="441" type="curve" smooth="yes"/>
+      <point x="334" y="-46" type="line" smooth="yes"/>
+      <point x="336" y="-51"/>
+      <point x="341" y="-54"/>
+      <point x="345" y="-54" type="curve" smooth="yes"/>
+      <point x="349" y="-54"/>
+      <point x="354" y="-51"/>
+      <point x="356" y="-46" type="curve" smooth="yes"/>
+      <point x="637" y="441" type="line" smooth="yes"/>
+      <point x="640" y="446"/>
+      <point x="641" y="450"/>
+      <point x="641" y="453" type="curve" smooth="yes"/>
+      <point x="641" y="462"/>
+      <point x="634" y="467"/>
+      <point x="626" y="467" type="curve" smooth="yes"/>
+      <point x="622" y="467"/>
+      <point x="619" y="466"/>
+    </contour>
+  </outline>
+</glyph>

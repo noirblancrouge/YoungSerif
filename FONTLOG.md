@@ -29,6 +29,9 @@ ChangeLog
 When you make modifications, be sure to add a description of your changes,
 following the format of the other entries, to the start of this section.
 
+24 Mar 2023 (Bastien Sozeau)
+- Update License, cleanup drawing, add glyphs
+
 04 Feb 2019 (Bastien Sozeau)
 - Update License, add real sources
 

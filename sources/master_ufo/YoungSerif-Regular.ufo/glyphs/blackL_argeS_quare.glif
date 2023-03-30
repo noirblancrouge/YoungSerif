@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="blackLargeSquare" format="2">
+  <advance width="820"/>
+  <unicode hex="2B1B"/>
+  <outline>
+    <contour>
+      <point x="59" y="-120" type="curve" smooth="yes"/>
+      <point x="761" y="-120" type="line" smooth="yes"/>
+      <point x="766" y="-120"/>
+      <point x="770" y="-116"/>
+      <point x="770" y="-111" type="curve" smooth="yes"/>
+      <point x="770" y="591" type="line" smooth="yes"/>
+      <point x="770" y="596"/>
+      <point x="766" y="600"/>
+      <point x="761" y="600" type="curve" smooth="yes"/>
+      <point x="59" y="600" type="line" smooth="yes"/>
+      <point x="54" y="600"/>
+      <point x="50" y="596"/>
+      <point x="50" y="591" type="curve" smooth="yes"/>
+      <point x="50" y="-111" type="line" smooth="yes"/>
+      <point x="50" y="-116"/>
+      <point x="54" y="-120"/>
+    </contour>
+  </outline>
+</glyph>
