@@ -1,6 +1,6 @@
 # YoungSerif
 
-![Cover](https://raw.githubusercontent.com/noirblancrouge/YoungSerif/master/documentation/images/young-serif-cover.jpg)
+![Cover](https://raw.githubusercontent.com/noirblancrouge/YoungSerif/master/documentation/images/young-serif.jpg)
 
 Young Serif is a heavy weight old style serif typeface, taking inspiration from Plantin Infant or ITC Italian Old Style. 
 The lowercase b and f feature rounded curves, adding a tender and generous quality to this font.
