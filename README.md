@@ -1,4 +1,4 @@
-# YoungSerif
+# Young Serif
 
 ![Cover](https://raw.githubusercontent.com/noirblancrouge/YoungSerif/master/documentation/images/young-serif.jpg)
 
