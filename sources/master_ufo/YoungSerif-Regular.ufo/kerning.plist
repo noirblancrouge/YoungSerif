@@ -114,6 +114,16 @@
       <key>two.lf</key>
       <integer>20</integer>
     </dict>
+    <key>idotbelow</key>
+    <dict>
+      <key>public.kern2.j</key>
+      <integer>80</integer>
+    </dict>
+    <key>iogonek</key>
+    <dict>
+      <key>public.kern2.j</key>
+      <integer>180</integer>
+    </dict>
     <key>ldot</key>
     <dict>
       <key>public.kern2.u</key>
@@ -1392,8 +1402,6 @@
       <integer>40</integer>
       <key>gdotaccent</key>
       <integer>40</integer>
-      <key>j</key>
-      <integer>210</integer>
       <key>public.kern2.a</key>
       <integer>-23</integer>
       <key>public.kern2.b</key>
