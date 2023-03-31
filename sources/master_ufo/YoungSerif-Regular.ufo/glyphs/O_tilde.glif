@@ -3,9 +3,9 @@
   <advance width="822"/>
   <unicode hex="00D5"/>
   <anchor x="426" y="0" name="bottom"/>
-  <anchor x="412" y="750" name="top"/>
+  <anchor x="412" y="960" name="top"/>
   <outline>
     <component base="O"/>
-    <component base="tilde" xOffset="134" yOffset="250"/>
+    <component base="tildecomb" xOffset="132" yOffset="250"/>
   </outline>
 </glyph>

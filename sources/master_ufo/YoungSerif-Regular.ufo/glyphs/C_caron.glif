@@ -3,9 +3,9 @@
   <advance width="749"/>
   <unicode hex="010C"/>
   <anchor x="407" y="0" name="bottom"/>
-  <anchor x="401" y="750" name="top"/>
+  <anchor x="401" y="960" name="top"/>
   <outline>
     <component base="C"/>
-    <component base="caron" xOffset="101" yOffset="250"/>
+    <component base="caroncomb" xOffset="98" yOffset="250"/>
   </outline>
 </glyph>

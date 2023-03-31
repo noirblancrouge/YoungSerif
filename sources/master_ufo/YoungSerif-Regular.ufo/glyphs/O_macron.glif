@@ -3,9 +3,9 @@
   <advance width="822"/>
   <unicode hex="014C"/>
   <anchor x="426" y="0" name="bottom"/>
-  <anchor x="412" y="750" name="top"/>
+  <anchor x="412" y="960" name="top"/>
   <outline>
     <component base="O"/>
-    <component base="macron" xOffset="119" yOffset="250"/>
+    <component base="macroncomb" xOffset="119" yOffset="250"/>
   </outline>
 </glyph>

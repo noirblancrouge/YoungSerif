@@ -6,21 +6,6 @@
   <anchor x="388" y="750" name="top"/>
   <outline>
     <component base="T"/>
-    <component base="cedilla" xOffset="137"/>
+    <component base="cedillacomb" xOffset="127"/>
   </outline>
-  <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
-      <array>
-        <dict>
-          <key>alignment</key>
-          <integer>-1</integer>
-          <key>index</key>
-          <integer>1</integer>
-          <key>name</key>
-          <string>cedilla</string>
-        </dict>
-      </array>
-    </dict>
-  </lib>
 </glyph>

@@ -3,10 +3,10 @@
   <advance width="619"/>
   <unicode hex="00E4"/>
   <anchor x="319" y="0" name="bottom"/>
-  <anchor x="526" y="27" name="ogonek"/>
-  <anchor x="286" y="500" name="top"/>
+  <anchor x="549" y="26" name="ogonek"/>
+  <anchor x="286" y="710" name="top"/>
   <outline>
     <component base="a"/>
-    <component base="dieresis" xOffset="-16"/>
+    <component base="dieresiscomb" xOffset="-16"/>
   </outline>
 </glyph>

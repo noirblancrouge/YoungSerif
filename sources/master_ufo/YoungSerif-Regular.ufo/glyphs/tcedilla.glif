@@ -5,7 +5,7 @@
   <anchor x="232" y="0" name="bottom"/>
   <outline>
     <component base="t"/>
-    <component base="cedilla" xOffset="-27"/>
+    <component base="cedillacomb" xOffset="-27"/>
   </outline>
   <lib>
     <dict>

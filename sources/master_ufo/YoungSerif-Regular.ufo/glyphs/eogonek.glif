@@ -3,25 +3,14 @@
   <advance width="515"/>
   <unicode hex="0119"/>
   <anchor x="295" y="0" name="bottom"/>
-  <anchor x="358" y="27" name="ogonek"/>
+  <anchor x="411" y="27" name="ogonek"/>
   <anchor x="256" y="500" name="top"/>
   <outline>
     <component base="e"/>
-    <component base="ogonek" xOffset="91" yOffset="27"/>
+    <component base="ogonekcomb" xOffset="78" yOffset="27"/>
   </outline>
   <lib>
     <dict>
-      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
-      <array>
-        <dict>
-          <key>alignment</key>
-          <integer>-1</integer>
-          <key>index</key>
-          <integer>1</integer>
-          <key>name</key>
-          <string>ogonek</string>
-        </dict>
-      </array>
       <key>com.schriftgestaltung.hints</key>
       <array>
         <dict>

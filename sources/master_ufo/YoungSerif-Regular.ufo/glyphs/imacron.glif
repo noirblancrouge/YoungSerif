@@ -4,9 +4,9 @@
   <unicode hex="012B"/>
   <anchor x="174" y="0" name="bottom"/>
   <anchor x="315" y="0" name="ogonek"/>
-  <anchor x="174" y="500" name="top"/>
+  <anchor x="174" y="710" name="top"/>
   <outline>
     <component base="idotless"/>
-    <component base="macron" xOffset="-119"/>
+    <component base="macroncomb" xOffset="-119"/>
   </outline>
 </glyph>

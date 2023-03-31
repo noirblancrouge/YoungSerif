@@ -4,21 +4,6 @@
   <unicode hex="0060"/>
   <anchor x="323" y="500" name="_top"/>
   <outline>
-    <component base="acute" xScale="-1" xOffset="588"/>
+    <component base="gravecomb"/>
   </outline>
-  <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
-      <array>
-        <dict>
-          <key>alignment</key>
-          <integer>-1</integer>
-          <key>index</key>
-          <integer>0</integer>
-          <key>name</key>
-          <string>acute</string>
-        </dict>
-      </array>
-    </dict>
-  </lib>
 </glyph>

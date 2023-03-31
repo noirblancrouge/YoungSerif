@@ -7,6 +7,6 @@
   <anchor x="365" y="750" name="top"/>
   <outline>
     <component base="E"/>
-    <component base="dotaccent" xOffset="76" yOffset="250"/>
+    <component base="dotaccentcomb" xOffset="76" yOffset="250"/>
   </outline>
 </glyph>

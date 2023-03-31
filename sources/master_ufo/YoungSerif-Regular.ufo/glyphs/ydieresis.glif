@@ -2,9 +2,9 @@
 <glyph name="ydieresis" format="2">
   <advance width="578"/>
   <unicode hex="00FF"/>
-  <anchor x="307" y="500" name="top"/>
+  <anchor x="307" y="710" name="top"/>
   <outline>
     <component base="y"/>
-    <component base="dieresis" xOffset="5"/>
+    <component base="dieresiscomb" xOffset="5"/>
   </outline>
 </glyph>

@@ -6,6 +6,6 @@
   <anchor x="268" y="500" name="top"/>
   <outline>
     <component base="c"/>
-    <component base="acute" xOffset="10"/>
+    <component base="acutecomb" xOffset="10"/>
   </outline>
 </glyph>
