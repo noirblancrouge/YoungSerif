@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="blackUpEquilateralArrowhead" format="2">
-  <advance width="631"/>
-  <unicode hex="2B9D"/>
-  <outline>
-    <component base="blackDownEquilateralArrowhead" xScale="-1.0" yScale="-1.0" xOffset="631" yOffset="415"/>
-  </outline>
-</glyph>

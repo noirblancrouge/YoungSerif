@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="threeDTopLightedLeftEquilateralArrowhead" format="2">
-  <advance width="621"/>
-  <unicode hex="2B98"/>
-  <outline>
-    <component base="threeDLeftLightedDownEquilateralArrowhead" xScale="0.0" xyScale="-1.0" yxScale="1.0" yScale="0.0" xOffset="104" yOffset="587"/>
-  </outline>
-</glyph>
