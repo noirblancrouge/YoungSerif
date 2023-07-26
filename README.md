@@ -21,6 +21,9 @@ This license is copied below, and is also available with a FAQ at http://scripts
 When you make modifications, be sure to add a description of your changes,
 following the format of the other entries, to the start of this section.
 
+26 July 2023 (Emma Marichal)
+- Update according GF specs - Small fixes
+
 24 Mar 2023 (Bastien Sozeau)
 - Update License, cleanup drawing, add glyphs
 
@@ -42,6 +45,10 @@ alphabetical order.
   E: contact@noirblancrouge.com
   W: noirblancrouge.com
   D: Designer
+
+  N: Emma Marichal
+  E: bonjour@emmamarichal.fr
+  D: Font engineer
 
 ## Repository Layout
 
