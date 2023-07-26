@@ -65,12 +65,13 @@ feature zero;
 tag = aalt;
 },
 {
-automatic = 1;
 code = "lookup ccmp_Other_1 {
 	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
 	lookupflag UseMarkFilteringSet @CombiningTopAccents;
 	sub i' @CombiningTopAccents by idotless;
 	sub j' @CombiningTopAccents by jdotless;
+	sub idotbelow' @CombiningTopAccents by idotless dotbelowcomb;
+	sub iogonek' @CombiningTopAccents by idotless ogonekcomb;
 } ccmp_Other_1;
 
 lookup ccmp_latn_1 {
@@ -31654,5 +31655,5 @@ value = "This Font Software is licensed under the SIL Open Font License, Version
 );
 unitsPerEm = 1000;
 versionMajor = 3;
-versionMinor = 1;
+versionMinor = 2;
 }
