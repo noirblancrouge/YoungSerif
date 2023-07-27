@@ -22583,22 +22583,6 @@ note = hyphen;
 unicode = 45;
 },
 {
-glyphname = softhyphen;
-lastChange = "2023-03-30 09:35:03 +0000";
-layers = (
-{
-layerId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
-shapes = (
-{
-ref = hyphen;
-}
-);
-width = 511;
-}
-);
-unicode = 173;
-},
-{
 glyphname = endash;
 lastChange = "2023-03-30 09:40:37 +0000";
 layers = (
@@ -31609,7 +31593,7 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "Copyright 2023 The Young Serif Project Authors (https://github.com//noirblancrouge)";
+value = "Copyright 2023 The Young Serif Project Authors (https://github.com/noirblancrouge/YoungSerif)";
 }
 );
 },
