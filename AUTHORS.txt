@@ -3,7 +3,7 @@
 # See the latter for an explanation.
 #
 # Names should be added to this file as:
-# Name or Organization <email address
+# Name or Organization <email address>
 
 NoirBlancRouge
-bastien Sozeau <contact@noirblancrouge.com>
+Bastien Sozeau <contact@noirblancrouge.com>
