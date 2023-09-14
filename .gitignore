@@ -1,3 +1,5 @@
-#.gitignore
+venv
 .DS_Store
-env
+.ninja_log
+build.ninja
+build.stamp

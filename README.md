@@ -1,5 +1,18 @@
 # Young Serif
 
+[![][Fontbakery]](http://noirblancrouge.github.io/YoungSerif/fontbakery/fontbakery-report.html)
+[![][Universal]](http://noirblancrouge.github.io/YoungSerif/fontbakery/fontbakery-report.html)
+[![][GF Profile]](http://noirblancrouge.github.io/YoungSerif/fontbakery/fontbakery-report.html)
+[![][Outline Correctness]](http://noirblancrouge.github.io/YoungSerif/fontbakery/fontbakery-report.html)
+[![][Shaping]](http://noirblancrouge.github.io/YoungSerif/fontbakery/fontbakery-report.html)
+
+[Fontbakery]: https://img.shields.io/endpoint?url=https://noirblancrouge.github.io/YoungSerif/fontbakery/overall.json
+[GF Profile]: https://img.shields.io/endpoint?url=https://noirblancrouge.github.io/YoungSerif/fontbakery/GoogleFonts.json
+[Outline Correctness]: https://img.shields.io/endpoint?url=https://noirblancrouge.github.io/YoungSerif/fontbakery/OutlineCorrectnessChecks.json
+[Shaping]: https://img.shields.io/endpoint?url=https://noirblancrouge.github.io/YoungSerif/fontbakery/ShapingChecks.json
+[Universal]: https://img.shields.io/endpoint?url=https://noirblancrouge.github.io/YoungSerif/fontbakery/Universal.json
+
+
 ![Cover](https://raw.githubusercontent.com/noirblancrouge/YoungSerif/master/documentation/images/young-serif.jpg)
 
 Young Serif is a heavy weight old style serif typeface, taking inspiration from Plantin Infant or ITC Italian Old Style. 
