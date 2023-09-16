@@ -2,7 +2,7 @@
 
 fontbakery version: 0.9.0
 
-<details><summary><b>[5] YoungSerif-Regular.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
+<details><summary><b>[4] YoungSerif-Regular.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
 
 
 * ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
@@ -54,8 +54,6 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: eogonek	Contours detected: 3	Expected: 2
 
-	- Glyph name: Tbar	Contours detected: 2	Expected: 1
-
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
@@ -71,8 +69,6 @@ The following glyphs do not have the recommended number of contours:
 	- Glyph name: uni1E1C	Contours detected: 3	Expected: 2
 
 	- Glyph name: uni1E1D	Contours detected: 4	Expected: 3
-
-	- Glyph name: Tbar	Contours detected: 2	Expected: 1
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
@@ -90,14 +86,6 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* uni2206 (U+2206): L<<300.0,474.0>--<296.0,463.0>> -> L<<296.0,463.0>--<178.0,154.0>>
-
-	* uni2206 (U+2206): L<<422.0,151.0>--<304.0,463.0>> -> L<<304.0,463.0>--<300.0,474.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -150,8 +138,8 @@ The following glyphs do not have the recommended number of contours:
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 5 | 121 | 8 | 116 | 0 |
-| 0% | 0% | 2% | 48% | 3% | 46% | 0% |
+| 0 | 0 | 4 | 121 | 8 | 117 | 0 |
+| 0% | 0% | 2% | 48% | 3% | 47% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
