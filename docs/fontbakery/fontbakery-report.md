@@ -2,7 +2,7 @@
 
 fontbakery version: 0.9.0
 
-<details><summary><b>[3] YoungSerif-Regular.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
+<details><summary><b>[2] YoungSerif-Regular.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
 
 
 * ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
@@ -18,31 +18,6 @@ fontbakery version: 0.9.0
 	- l + f
 
 	- i + l [code: lacks-kern-info]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- eight.subs
-
-	- five.subs
-
-	- four.subs
-
-	- nine.subs
-
-	- one.subs
-
-	- seven.subs
-
-	- six.subs
-
-	- three.subs
-
-	- two.subs
-
-	- zero.subs
- [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
@@ -92,8 +67,8 @@ The following glyphs do not have the recommended number of contours:
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 3 | 121 | 8 | 118 | 0 |
-| 0% | 0% | 1% | 48% | 3% | 47% | 0% |
+| 0 | 0 | 2 | 121 | 8 | 119 | 0 |
+| 0% | 0% | 1% | 48% | 3% | 48% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
