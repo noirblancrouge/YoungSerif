@@ -2,7 +2,7 @@
 
 fontbakery version: 0.9.0
 
-<details><summary><b>[4] YoungSerif-Regular.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
+<details><summary><b>[3] YoungSerif-Regular.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
 
 
 * ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
@@ -86,24 +86,14 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-
-	* ae (U+00E6): L<<393.0,-10.0>--<404.0,79.0>>/B<<404.0,79.0>-<399.0,66.0>-<382.5,44.0>> = 13.991741900554299
-
-	* aeacute (U+01FD): L<<393.0,-10.0>--<404.0,79.0>>/B<<404.0,79.0>-<399.0,66.0>-<382.5,44.0>> = 13.991741900554299
-
-	* at (U+0040): L<<606.0,-3.0>--<616.0,77.0>>/B<<616.0,77.0>-<611.0,64.0>-<595.5,42.5>> = 13.912494676520005 [code: found-jaggy-segments]
 </div></details><br></div></details>
 
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 4 | 121 | 8 | 117 | 0 |
-| 0% | 0% | 2% | 48% | 3% | 47% | 0% |
+| 0 | 0 | 3 | 121 | 8 | 118 | 0 |
+| 0% | 0% | 1% | 48% | 3% | 47% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
