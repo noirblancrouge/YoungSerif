@@ -2,7 +2,7 @@
 .appVersion = "3218";
 .formatVersion = 3;
 DisplayStrings = (
-"ifﬁ"
+"ąĄĘĮǪŲąę/idotless_ogonekcomb oǫų˛ą"
 );
 classes = (
 {
@@ -8535,7 +8535,7 @@ unicode = 257;
 glyphname = aogonek;
 kernLeft = a;
 kernRight = a;
-lastChange = "2023-03-31 13:35:45 +0000";
+lastChange = "2023-09-17 20:31:22 +0000";
 layers = (
 {
 layerId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
@@ -12794,13 +12794,17 @@ unicode = 331;
 glyphname = o;
 kernLeft = a;
 kernRight = b;
-lastChange = "2023-03-30 09:40:38 +0000";
+lastChange = "2023-09-17 20:32:16 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
 pos = (288,0);
+},
+{
+name = ogonek;
+pos = (332,0);
 },
 {
 name = top;
@@ -13088,7 +13092,7 @@ unicode = 7761;
 glyphname = oogonek;
 kernLeft = a;
 kernRight = b;
-lastChange = "2023-03-30 09:35:03 +0000";
+lastChange = "2023-09-17 20:32:16 +0000";
 layers = (
 {
 layerId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
@@ -13097,7 +13101,7 @@ shapes = (
 ref = o;
 },
 {
-pos = (-45,0);
+pos = (-1,0);
 ref = ogonekcomb;
 }
 );
@@ -30380,7 +30384,7 @@ unicode = 807;
 },
 {
 glyphname = ogonekcomb;
-lastChange = "2023-03-31 13:34:44 +0000";
+lastChange = "2023-09-17 20:31:18 +0000";
 layers = (
 {
 anchors = (
