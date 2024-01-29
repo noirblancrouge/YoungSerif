@@ -2,7 +2,21 @@
 
 fontbakery version: 0.10.2
 
-<details><summary><b>[7] YoungSerif-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions">com.google.fonts/check/vertical_metrics_regressions</a>)</summary><div>
+<details><summary><b>[8] YoungSerif-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Familyname must be unique according to namecheck.fontdata.com (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fontdata_namecheck">com.google.fonts/check/fontdata_namecheck</a>)</summary><div>
+
+
+* 💔 **ERROR** Failed to access: http://namecheck.fontdata.com.
+		This check relies on the external service http://namecheck.fontdata.com via the internet. While the service cannot be reached or does not respond this check is broken.
+
+		You can exclude this check with the command line option:
+		-x com.google.fonts/check/fontdata_namecheck
+
+		Or you can wait until the service is available again.
+		If the problem persists please report this issue at: https://github.com/fonttools/fontbakery/issues
+
+		Original error message:
+		<class 'requests.exceptions.ConnectionError'> [code: namecheck-service]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions">com.google.fonts/check/vertical_metrics_regressions</a>)</summary><div>
 
 
 * 🔥 **FAIL** Young Serif Regular: OS/2 sTypoAscender is 930 when it should be 1046 [code: bad-typo-ascender]
@@ -25,7 +39,7 @@ fontbakery version: 0.10.2
  * U+02BD MODIFIER LETTER REVERSED COMMA: not included in any glyphset definition
  * U+02BE MODIFIER LETTER RIGHT HALF RING: not included in any glyphset definition
  * U+02BF MODIFIER LETTER LEFT HALF RING: not included in any glyphset definition
- * U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal
+ * U+02C7 CARON: try adding one of: yi, canadian-aboriginal, tifinagh
  * U+02C8 MODIFIER LETTER VERTICAL LINE: not included in any glyphset definition
  * U+02CA MODIFIER LETTER ACUTE ACCENT: not included in any glyphset definition
  * U+02CB MODIFIER LETTER GRAVE ACCENT: not included in any glyphset definition
@@ -34,23 +48,23 @@ fontbakery version: 0.10.2
  * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
  * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
- * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, tifinagh, math, cherokee
- * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
- * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam, old-permic, tifinagh, coptic, math, tai-le, syriac
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, coptic, tifinagh, math
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, old-permic, tifinagh, tai-le, malayalam, syriac, math, coptic
  * U+030A COMBINING RING ABOVE: try adding syriac
- * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
  * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
  * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
  * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
  * U+0327 COMBINING CEDILLA: not included in any glyphset definition
  * U+0328 COMBINING OGONEK: not included in any glyphset definition
  * U+032E COMBINING BREVE BELOW: try adding syriac
- * U+0330 COMBINING TILDE BELOW: try adding one of: math, cherokee, syriac
- * U+0331 COMBINING MACRON BELOW: try adding one of: cherokee, caucasian-albanian, tifinagh, gothic, syriac
- * U+0394 GREEK CAPITAL LETTER DELTA: try adding one of: math, elbasan, greek
- * U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: math, elbasan, greek
- * U+03BC GREEK SMALL LETTER MU: try adding one of: math, greek
- * U+03C0 GREEK SMALL LETTER PI: try adding one of: yi, math, greek
+ * U+0330 COMBINING TILDE BELOW: try adding one of: cherokee, syriac, math
+ * U+0331 COMBINING MACRON BELOW: try adding one of: gothic, tifinagh, caucasian-albanian, cherokee, syriac
+ * U+0394 GREEK CAPITAL LETTER DELTA: try adding one of: elbasan, greek, math
+ * U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: elbasan, greek, math
+ * U+03BC GREEK SMALL LETTER MU: try adding one of: greek, math
+ * U+03C0 GREEK SMALL LETTER PI: try adding one of: greek, yi, math
  * U+1EA0 LATIN CAPITAL LETTER A WITH DOT BELOW: try adding vietnamese
  * U+1EA1 LATIN SMALL LETTER A WITH DOT BELOW: try adding vietnamese
  * U+1EB8 LATIN CAPITAL LETTER E WITH DOT BELOW: try adding vietnamese
@@ -66,7 +80,7 @@ fontbakery version: 0.10.2
  * U+2007 FIGURE SPACE: not included in any glyphset definition
  * U+2008 PUNCTUATION SPACE: not included in any glyphset definition
  * U+200A HAIR SPACE: not included in any glyphset definition
- * U+2010 HYPHEN: try adding one of: kaithi, syloti-nagri, kharoshthi, lisu, yi, kayah-li, cham, sora-sompeng, coptic, sundanese
+ * U+2010 HYPHEN: try adding one of: sora-sompeng, kharoshthi, sundanese, lisu, yi, cham, coptic, kayah-li, kaithi, syloti-nagri
  * U+2012 FIGURE DASH: not included in any glyphset definition
  * U+2015 HORIZONTAL BAR: try adding adlam
  * U+2021 DOUBLE DAGGER: try adding adlam
@@ -98,7 +112,7 @@ fontbakery version: 0.10.2
  * U+2206 INCREMENT: try adding math
  * U+220F N-ARY PRODUCT: try adding math
  * U+2211 N-ARY SUMMATION: try adding math
- * U+2219 BULLET OPERATOR: try adding one of: yi, math, symbols, tai-tham
+ * U+2219 BULLET OPERATOR: try adding one of: yi, tai-tham, symbols, math
  * U+221A SQUARE ROOT: try adding math
  * U+221E INFINITY: try adding math
  * U+222B INTEGRAL: try adding math
@@ -112,18 +126,18 @@ fontbakery version: 0.10.2
  * U+25A0 BLACK SQUARE: try adding symbols
  * U+25A1 WHITE SQUARE: try adding symbols
  * U+25B2 BLACK UP-POINTING TRIANGLE: try adding symbols
- * U+25B3 WHITE UP-POINTING TRIANGLE: try adding one of: math, symbols
+ * U+25B3 WHITE UP-POINTING TRIANGLE: try adding one of: symbols, math
  * U+25B6 BLACK RIGHT-POINTING TRIANGLE: try adding symbols
- * U+25B7 WHITE RIGHT-POINTING TRIANGLE: try adding one of: math, symbols
+ * U+25B7 WHITE RIGHT-POINTING TRIANGLE: try adding one of: symbols, math
  * U+25BC BLACK DOWN-POINTING TRIANGLE: try adding symbols
- * U+25BD WHITE DOWN-POINTING TRIANGLE: try adding one of: math, symbols
+ * U+25BD WHITE DOWN-POINTING TRIANGLE: try adding one of: symbols, math
  * U+25C0 BLACK LEFT-POINTING TRIANGLE: try adding symbols
- * U+25C1 WHITE LEFT-POINTING TRIANGLE: try adding one of: math, symbols
+ * U+25C1 WHITE LEFT-POINTING TRIANGLE: try adding one of: symbols, math
  * U+25C6 BLACK DIAMOND: try adding symbols
  * U+25C7 WHITE DIAMOND: try adding symbols
- * U+25CA LOZENGE: try adding one of: math, symbols
+ * U+25CA LOZENGE: try adding one of: symbols, math
  * U+25CB WHITE CIRCLE: try adding symbols
- * U+25CC DOTTED CIRCLE: try adding one of: oriya, dogra, osage, malayalam, kaithi, hanifi-rohingya, pahawh-hmong, lao, symbols, bhaiksuki, khudawadi, coptic, mahajani, newa, khmer, lepcha, tai-le, music, miao, buhid, new-tai-lue, grantha, gurmukhi, tagalog, sundanese, mongolian, gunjala-gondi, brahmi, hanunoo, khojki, psalter-pahlavi, bassa-vah, tibetan, old-permic, siddham, tifinagh, buginese, syriac, mende-kikakui, telugu, balinese, meetei-mayek, soyombo, mandaic, javanese, chakma, cham, duployan, limbu, myanmar, phags-pa, tagbanwa, thai, wancho, tamil, devanagari, tai-viet, kharoshthi, nko, thaana, gujarati, masaram-gondi, modi, batak, ahom, marchen, bengali, yi, adlam, kannada, takri, rejang, syloti-nagri, zanabazar-square, caucasian-albanian, elbasan, tirhuta, sinhala, manichaean, hebrew, sharada, kayah-li, sogdian, math
+ * U+25CC DOTTED CIRCLE: try adding one of: gujarati, sundanese, lao, malayalam, adlam, thai, hanunoo, kharoshthi, limbu, javanese, manichaean, miao, balinese, sinhala, gunjala-gondi, takri, ahom, syloti-nagri, tai-viet, caucasian-albanian, myanmar, newa, siddham, new-tai-lue, oriya, thaana, buhid, telugu, sogdian, tagbanwa, symbols, chakma, syriac, cham, music, mahajani, brahmi, masaram-gondi, mende-kikakui, rejang, coptic, bassa-vah, hanifi-rohingya, lepcha, buginese, hebrew, modi, mandaic, mongolian, grantha, zanabazar-square, wancho, tagalog, khmer, bengali, math, pahawh-hmong, tifinagh, tibetan, batak, kannada, soyombo, osage, gurmukhi, meetei-mayek, psalter-pahlavi, kayah-li, old-permic, phags-pa, bhaiksuki, sharada, tai-le, kaithi, nko, tirhuta, dogra, yi, khudawadi, marchen, devanagari, duployan, tamil, elbasan, khojki
  * U+25CF BLACK CIRCLE: try adding symbols
  * U+2B1B BLACK LARGE SQUARE: try adding symbols
  * U+2B1C WHITE LARGE SQUARE: try adding symbols
@@ -817,7 +831,7 @@ The following glyphs do not have the recommended number of contours:
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 2 | 5 | 119 | 8 | 120 | 0 |
+| 1 | 2 | 5 | 119 | 8 | 119 | 0 |
 | 0% | 1% | 2% | 47% | 3% | 47% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
