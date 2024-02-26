@@ -21,7 +21,7 @@ collidoscope==0.6.5
 colorlog==6.7.0
 commandlines==0.4.1
 compreffor==0.5.4
-cryptography==41.0.7
+cryptography>=42.0.4
 cu2qu==1.6.7.post2
 defcon==0.10.2
 dehinter==4.0.0
@@ -30,7 +30,7 @@ diffenator2==0.2.12
 drawbot-skia==0.5.0
 exceptiongroup==1.1.3
 font-v==2.1.0
-fontbakery==0.10.2
+fontbakery==0.11.2
 fontFeatures==1.8.0
 fontmake==3.7.1
 fontMath==0.9.3
