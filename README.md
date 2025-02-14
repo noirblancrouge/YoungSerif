@@ -24,6 +24,9 @@ The lowercase b and f feature rounded curves, adding a tender and generous quali
 When you make modifications, be sure to add a description of your changes,
 following the format of the other entries, to the start of this section.
 
+14 Feb 2025 (Bastien Sozeau)
+- Add glyphs according to the standards of the NBR glyphset
+
 08 Jan 2025 (Bastien Sozeau)
 - Adding glyphs according to NBR_glyphsets standards
 
