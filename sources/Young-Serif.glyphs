@@ -95,14 +95,16 @@ name = Languagesystems;
 features = (
 {
 automatic = 1;
-code = "feature locl;
-feature subs;
+code = "feature smcp;
 feature sinf;
 feature sups;
 feature numr;
 feature dnom;
 feature frac;
 feature ordn;
+feature c2sc;
+feature locl;
+feature subs;
 feature lnum;
 feature pnum;
 feature tnum;
@@ -112,98 +114,262 @@ feature zero;
 feature calt;
 feature ss03;
 feature ss04;
-feature c2sc;
-feature smcp;
 ";
 tag = aalt;
 },
 {
-code = "lookup ccmp_Other_1 {
-	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
-	@CombiningNonTopAccents = [brevebelowcomb cedillacomb dotbelowcomb macronbelowcomb ogonekcomb tildebelowcomb];
-	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
-} ccmp_Other_1;
-
-lookup ccmp_latn_1 {
-	sub Ldot by L periodcentered.loclCAT.case;
-} ccmp_latn_1;
-
-script latn;
-lookup ccmp_latn_1;
-
-lookup ccmp_soft_dotted {
-    lookupflag UseMarkFilteringSet @CombiningTopAccents;
-    sub [i j idotbelow iogonek itildebelow ]' @CombiningTopAccents by [idotless jdotless idotless_dotbelowcomb idotless_ogonekcomb idotless_tildebelowcomb];
-} ccmp_soft_dotted;
+code = "sub a by A.sc;
+sub aacute by Aacute.sc;
+sub abreve by Abreve.sc;
+sub abreveacute by Abreveacute.sc;
+sub abrevedotbelow by Abrevedotbelow.sc;
+sub abrevegrave by Abrevegrave.sc;
+sub abrevehookabove by Abrevehookabove.sc;
+sub abrevetilde by Abrevetilde.sc;
+sub acaron by Acaron.sc;
+sub acircumflex by Acircumflex.sc;
+sub acircumflexacute by Acircumflexacute.sc;
+sub acircumflexdotbelow by Acircumflexdotbelow.sc;
+sub acircumflexgrave by Acircumflexgrave.sc;
+sub acircumflexhookabove by Acircumflexhookabove.sc;
+sub acircumflextilde by Acircumflextilde.sc;
+sub adblgrave by Adblgrave.sc;
+sub adieresis by Adieresis.sc;
+sub adotbelow by Adotbelow.sc;
+sub agrave by Agrave.sc;
+sub ahookabove by Ahookabove.sc;
+sub ainvertedbreve by Ainvertedbreve.sc;
+sub amacron by Amacron.sc;
+sub aogonek by Aogonek.sc;
+sub aring by Aring.sc;
+sub aringacute by Aringacute.sc;
+sub atilde by Atilde.sc;
+sub ae by AE.sc;
+sub aeacute by AEacute.sc;
+sub b by B.sc;
+sub bdotbelow by Bdotbelow.sc;
+sub c by C.sc;
+sub cacute by Cacute.sc;
+sub ccaron by Ccaron.sc;
+sub ccedilla by Ccedilla.sc;
+sub ccedillaacute by Ccedillaacute.sc;
+sub ccircumflex by Ccircumflex.sc;
+sub cdotaccent by Cdotaccent.sc;
+sub d by D.sc;
+sub dzcaron by DZcaron.sc;
+sub dcaron by Dcaron.sc;
+sub dcroat by Dcroat.sc;
+sub ddotbelow by Ddotbelow.sc;
+sub dmacronbelow by Dmacronbelow.sc;
+sub eth by Eth.sc;
+sub e by E.sc;
+sub eacute by Eacute.sc;
+sub ebreve by Ebreve.sc;
+sub ecaron by Ecaron.sc;
+sub ecedillabreve by Ecedillabreve.sc;
+sub ecircumflex by Ecircumflex.sc;
+sub ecircumflexacute by Ecircumflexacute.sc;
+sub ecircumflexdotbelow by Ecircumflexdotbelow.sc;
+sub ecircumflexgrave by Ecircumflexgrave.sc;
+sub ecircumflexhookabove by Ecircumflexhookabove.sc;
+sub ecircumflextilde by Ecircumflextilde.sc;
+sub edblgrave by Edblgrave.sc;
+sub edieresis by Edieresis.sc;
+sub edotaccent by Edotaccent.sc;
+sub edotbelow by Edotbelow.sc;
+sub egrave by Egrave.sc;
+sub ehookabove by Ehookabove.sc;
+sub einvertedbreve by Einvertedbreve.sc;
+sub emacron by Emacron.sc;
+sub emacronacute by Emacronacute.sc;
+sub emacrongrave by Emacrongrave.sc;
+sub eogonek by Eogonek.sc;
+sub etilde by Etilde.sc;
+sub schwa by Schwa.sc;
+sub f by F.sc;
+sub g by G.sc;
+sub gbreve by Gbreve.sc;
+sub gcaron by Gcaron.sc;
+sub gcircumflex by Gcircumflex.sc;
+sub gcommaaccent by Gcommaaccent.sc;
+sub gdotaccent by Gdotaccent.sc;
+sub gmacron by Gmacron.sc;
+sub h by H.sc;
+sub hbar by Hbar.sc;
+sub hbrevebelow by Hbrevebelow.sc;
+sub hcircumflex by Hcircumflex.sc;
+sub hdotbelow by Hdotbelow.sc;
+sub i by I.sc;
+sub ij by IJ.sc;
+sub iacute by Iacute.sc;
+sub ibreve by Ibreve.sc;
+sub icaron by Icaron.sc;
+sub icircumflex by Icircumflex.sc;
+sub idblgrave by Idblgrave.sc;
+sub idieresis by Idieresis.sc;
+sub idieresisacute by Idieresisacute.sc;
+sub idotaccent by Idotaccent.sc;
+sub idotbelow by Idotbelow.sc;
+sub igrave by Igrave.sc;
+sub ihookabove by Ihookabove.sc;
+sub iinvertedbreve by Iinvertedbreve.sc;
+sub imacron by Imacron.sc;
+sub iogonek by Iogonek.sc;
+sub itilde by Itilde.sc;
+sub itildebelow by Itildebelow.sc;
+sub j by J.sc;
+sub jacute by Jacute.sc;
+sub jcircumflex by Jcircumflex.sc;
+sub k by K.sc;
+sub kcommaaccent by Kcommaaccent.sc;
+sub kmacronbelow by Kmacronbelow.sc;
+sub l by L.sc;
+sub lj by LJ.sc;
+sub lacute by Lacute.sc;
+sub lcaron by Lcaron.sc;
+sub lcommaaccent by Lcommaaccent.sc;
+sub ldot by Ldot.sc;
+sub ldotbelow by Ldotbelow.sc;
+sub ldotbelowmacron by Ldotbelowmacron.sc;
+sub lmacronbelow by Lmacronbelow.sc;
+sub lslash by Lslash.sc;
+sub m by M.sc;
+sub mdotaccent by Mdotaccent.sc;
+sub mdotbelow by Mdotbelow.sc;
+sub n by N.sc;
+sub nj by NJ.sc;
+sub nacute by Nacute.sc;
+sub ncaron by Ncaron.sc;
+sub ncommaaccent by Ncommaaccent.sc;
+sub ndotaccent by Ndotaccent.sc;
+sub ndotbelow by Ndotbelow.sc;
+sub nhookleft by Nhookleft.sc;
+sub nmacronbelow by Nmacronbelow.sc;
+sub ntilde by Ntilde.sc;
+sub eng by Eng.sc;
+sub o by O.sc;
+sub oacute by Oacute.sc;
+sub obreve by Obreve.sc;
+sub ocaron by Ocaron.sc;
+sub ocircumflex by Ocircumflex.sc;
+sub ocircumflexacute by Ocircumflexacute.sc;
+sub ocircumflexdotbelow by Ocircumflexdotbelow.sc;
+sub ocircumflexgrave by Ocircumflexgrave.sc;
+sub ocircumflexhookabove by Ocircumflexhookabove.sc;
+sub ocircumflextilde by Ocircumflextilde.sc;
+sub odblgrave by Odblgrave.sc;
+sub odieresis by Odieresis.sc;
+sub odieresismacron by Odieresismacron.sc;
+sub odotaccentmacron by Odotaccentmacron.sc;
+sub odotbelow by Odotbelow.sc;
+sub ograve by Ograve.sc;
+sub ohookabove by Ohookabove.sc;
+sub ohorn by Ohorn.sc;
+sub ohornacute by Ohornacute.sc;
+sub ohorndotbelow by Ohorndotbelow.sc;
+sub ohorngrave by Ohorngrave.sc;
+sub ohornhookabove by Ohornhookabove.sc;
+sub ohorntilde by Ohorntilde.sc;
+sub ohungarumlaut by Ohungarumlaut.sc;
+sub oinvertedbreve by Oinvertedbreve.sc;
+sub omacron by Omacron.sc;
+sub omacronacute by Omacronacute.sc;
+sub omacrongrave by Omacrongrave.sc;
+sub oogonek by Oogonek.sc;
+sub oslash by Oslash.sc;
+sub oslashacute by Oslashacute.sc;
+sub otilde by Otilde.sc;
+sub otildeacute by Otildeacute.sc;
+sub otildedieresis by Otildedieresis.sc;
+sub otildemacron by Otildemacron.sc;
+sub oe by OE.sc;
+sub p by P.sc;
+sub pdotaccent by Pdotaccent.sc;
+sub thorn by Thorn.sc;
+sub q by Q.sc;
+sub r by R.sc;
+sub racute by Racute.sc;
+sub rcaron by Rcaron.sc;
+sub rcommaaccent by Rcommaaccent.sc;
+sub rdblgrave by Rdblgrave.sc;
+sub rdotbelow by Rdotbelow.sc;
+sub rdotbelowmacron by Rdotbelowmacron.sc;
+sub rinvertedbreve by Rinvertedbreve.sc;
+sub rmacronbelow by Rmacronbelow.sc;
+sub s by S.sc;
+sub sacute by Sacute.sc;
+sub sacutedotaccent by Sacutedotaccent.sc;
+sub scaron by Scaron.sc;
+sub scarondotaccent by Scarondotaccent.sc;
+sub scedilla by Scedilla.sc;
+sub scircumflex by Scircumflex.sc;
+sub scommaaccent by Scommaaccent.sc;
+sub sdotaccent by Sdotaccent.sc;
+sub sdotbelow by Sdotbelow.sc;
+sub sdotbelowdotaccent by Sdotbelowdotaccent.sc;
+sub germandbls by Germandbls.sc;
+sub t by T.sc;
+sub tbar by Tbar.sc;
+sub tcaron by Tcaron.sc;
+sub tcedilla by Tcedilla.sc;
+sub tcommaaccent by Tcommaaccent.sc;
+sub tdotbelow by Tdotbelow.sc;
+sub tmacronbelow by Tmacronbelow.sc;
+sub u by U.sc;
+sub uacute by Uacute.sc;
+sub ubreve by Ubreve.sc;
+sub ucaron by Ucaron.sc;
+sub ucircumflex by Ucircumflex.sc;
+sub udblgrave by Udblgrave.sc;
+sub udieresis by Udieresis.sc;
+sub udieresisacute by Udieresisacute.sc;
+sub udieresiscaron by Udieresiscaron.sc;
+sub udieresisgrave by Udieresisgrave.sc;
+sub udieresismacron by Udieresismacron.sc;
+sub udotbelow by Udotbelow.sc;
+sub ugrave by Ugrave.sc;
+sub uhookabove by Uhookabove.sc;
+sub uhorn by Uhorn.sc;
+sub uhornacute by Uhornacute.sc;
+sub uhorndotbelow by Uhorndotbelow.sc;
+sub uhorngrave by Uhorngrave.sc;
+sub uhornhookabove by Uhornhookabove.sc;
+sub uhorntilde by Uhorntilde.sc;
+sub uhungarumlaut by Uhungarumlaut.sc;
+sub uinvertedbreve by Uinvertedbreve.sc;
+sub umacron by Umacron.sc;
+sub umacrondieresis by Umacrondieresis.sc;
+sub uogonek by Uogonek.sc;
+sub uring by Uring.sc;
+sub utilde by Utilde.sc;
+sub utildeacute by Utildeacute.sc;
+sub v by V.sc;
+sub w by W.sc;
+sub wacute by Wacute.sc;
+sub wcircumflex by Wcircumflex.sc;
+sub wdieresis by Wdieresis.sc;
+sub wgrave by Wgrave.sc;
+sub x by X.sc;
+sub y by Y.sc;
+sub yacute by Yacute.sc;
+sub ycircumflex by Ycircumflex.sc;
+sub ydieresis by Ydieresis.sc;
+sub ydotaccent by Ydotaccent.sc;
+sub ydotbelow by Ydotbelow.sc;
+sub ygrave by Ygrave.sc;
+sub yhookabove by Yhookabove.sc;
+sub ymacron by Ymacron.sc;
+sub ytilde by Ytilde.sc;
+sub z by Z.sc;
+sub zacute by Zacute.sc;
+sub zcaron by Zcaron.sc;
+sub zdotaccent by Zdotaccent.sc;
+sub zdotbelow by Zdotbelow.sc;
+sub saltillo by Saltillo.sc;
+sub lcommaaccent.loclMAH by Lcommaaccent.loclMAH.sc;
+sub Ncommaaccent.loclMAH by Ncommaaccent.loclMAH.sc;
 ";
-tag = ccmp;
-},
-{
-code = "script latn;
-language AZE;
-lookup locl_latn_0 {
-	sub i by idotaccent;
-} locl_latn_0;
-language CRT;
-lookup locl_latn_0;
-language KAZ;
-lookup locl_latn_0;
-language TAT;
-lookup locl_latn_0;
-language TRK;
-lookup locl_latn_0;
-
-script latn;
-language ROM;
-lookup locl_latn_1 {
-	sub Scedilla by Scommaaccent;
-	sub scedilla by scommaaccent;
-	sub Tcedilla by Tcommaaccent;
-	sub tcedilla by tcommaaccent;
-} locl_latn_1;
-language MOL;
-lookup locl_latn_1;
-
-script latn;
-language MAH;
-lookup locl_latn_2 {
-	sub Lcommaaccent by Lcommaaccent.loclMAH;
-	sub Ncommaaccent by Ncommaaccent.loclMAH;
-	sub lcommaaccent by lcommaaccent.loclMAH;
-	sub ncommaaccent by ncommaaccent.loclMAH;
-	sub commaaccentcomb by commaaccentcomb.loclMAH;
-} locl_latn_2;
-
-script latn;
-language CAT;
-lookup locl_latn_3 {
-	sub l periodcentered' l by periodcentered.loclCAT;
-	sub L periodcentered' L by periodcentered.loclCAT.case;
-	sub L.sc periodcentered' L.sc by periodcentered.loclCAT.case;
-} locl_latn_3;
-
-script latn;
-language NLD;
-lookup locl_latn_4 {
-	sub iacute j' by jacute;
-	sub Iacute J' by Jacute;
-} locl_latn_4;
-";
-tag = locl;
-},
-{
-code = "sub zero by zero.subs;
-sub one by one.subs;
-sub two by two.subs;
-sub three by three.subs;
-sub four by four.subs;
-sub five by five.subs;
-sub six by six.subs;
-sub seven by seven.subs;
-sub eight by eight.subs;
-sub nine by nine.subs;
-";
-tag = subs;
+tag = smcp;
 },
 {
 automatic = 1;
@@ -287,377 +453,6 @@ sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
 sub N o period by numero;
 ";
 tag = ordn;
-},
-{
-automatic = 1;
-code = "sub zero by zero.lf;
-sub one by one.lf;
-sub two by two.lf;
-sub three by three.lf;
-sub four by four.lf;
-sub five by five.lf;
-sub six by six.lf;
-sub seven by seven.lf;
-sub eight by eight.lf;
-sub nine by nine.lf;
-";
-tag = lnum;
-},
-{
-automatic = 1;
-code = "sub zero.tf by zero.lf;
-sub one.tf by one.lf;
-sub two.tf by two.lf;
-sub three.tf by three.lf;
-sub four.tf by four.lf;
-sub five.tf by five.lf;
-sub six.tf by six.lf;
-sub seven.tf by seven.lf;
-sub eight.tf by eight.lf;
-sub nine.tf by nine.lf;
-sub zero.tosf by zero;
-sub one.tosf by one;
-sub two.tosf by two;
-sub three.tosf by three;
-sub four.tosf by four;
-sub five.tosf by five;
-sub six.tosf by six;
-sub seven.tosf by seven;
-sub eight.tosf by eight;
-sub nine.tosf by nine;
-";
-tag = pnum;
-},
-{
-automatic = 1;
-code = "sub zero.lf by zero.tf;
-sub one.lf by one.tf;
-sub two.lf by two.tf;
-sub three.lf by three.tf;
-sub four.lf by four.tf;
-sub five.lf by five.tf;
-sub six.lf by six.tf;
-sub seven.lf by seven.tf;
-sub eight.lf by eight.tf;
-sub nine.lf by nine.tf;
-sub zero by zero.tosf;
-sub one by one.tosf;
-sub two by two.tosf;
-sub three by three.tosf;
-sub four by four.tosf;
-sub five by five.tosf;
-sub six by six.tosf;
-sub seven by seven.tosf;
-sub eight by eight.tosf;
-sub nine by nine.tosf;
-";
-tag = tnum;
-},
-{
-automatic = 1;
-code = "sub zero.lf by zero;
-sub one.lf by one;
-sub two.lf by two;
-sub three.lf by three;
-sub four.lf by four;
-sub five.lf by five;
-sub six.lf by six;
-sub seven.lf by seven;
-sub eight.lf by eight;
-sub nine.lf by nine;
-sub zero.tf by zero.tosf;
-sub one.tf by one.tosf;
-sub two.tf by two.tosf;
-sub three.tf by three.tosf;
-sub four.tf by four.tosf;
-sub five.tf by five.tosf;
-sub six.tf by six.tosf;
-sub seven.tf by seven.tosf;
-sub eight.tf by eight.tosf;
-sub nine.tf by nine.tosf;
-sub zero by zero.osf;
-sub one by one.osf;
-sub two by two.osf;
-sub three by three.osf;
-sub four by four.osf;
-sub five by five.osf;
-sub six by six.osf;
-sub seven by seven.osf;
-sub eight by eight.osf;
-sub nine by nine.osf;
-";
-tag = onum;
-},
-{
-automatic = 1;
-code = "sub exclam by exclam.case;
-sub exclamdown by exclamdown.case;
-sub question by question.case;
-sub questiondown by questiondown.case;
-sub periodcentered by periodcentered.case;
-sub interrobang by interrobang.case;
-sub questionexclamation by questionexclamation.case;
-sub slash by slash.case;
-sub backslash by backslash.case;
-sub periodcentered.loclCAT by periodcentered.loclCAT.case;
-sub hyphen by hyphen.case;
-sub softhyphen by softhyphen.case;
-sub endash by endash.case;
-sub emdash by emdash.case;
-sub parenleft by parenleft.case;
-sub parenright by parenright.case;
-sub braceleft by braceleft.case;
-sub braceright by braceright.case;
-sub bracketleft by bracketleft.case;
-sub bracketright by bracketright.case;
-sub guillemetleft by guillemetleft.case;
-sub guillemetright by guillemetright.case;
-sub guilsinglleft by guilsinglleft.case;
-sub guilsinglright by guilsinglright.case;
-sub bar by bar.case;
-sub brokenbar by brokenbar.case;
-sub plus by plus.case;
-sub minus by minus.case;
-sub multiply by multiply.case;
-sub divide by divide.case;
-sub equal by equal.case;
-sub notequal by notequal.case;
-sub greater by greater.case;
-sub less by less.case;
-sub greaterequal by greaterequal.case;
-sub lessequal by lessequal.case;
-sub plusminus by plusminus.case;
-sub zero by zero.lf;
-sub one by one.lf;
-sub two by two.lf;
-sub three by three.lf;
-sub four by four.lf;
-sub five by five.lf;
-sub six by six.lf;
-sub seven by seven.lf;
-sub eight by eight.lf;
-sub nine by nine.lf;
-sub zero.osf by zero.lf;
-sub one.osf by one.lf;
-sub two.osf by two.lf;
-sub three.osf by three.lf;
-sub four.osf by four.lf;
-sub five.osf by five.lf;
-sub six.osf by six.lf;
-sub seven.osf by seven.lf;
-sub eight.osf by eight.lf;
-sub nine.osf by nine.lf;
-sub zero.tosf by zero.lf;
-sub one.tosf by one.lf;
-sub two.tosf by two.lf;
-sub three.tosf by three.lf;
-sub four.tosf by four.lf;
-sub five.tosf by five.lf;
-sub six.tosf by six.lf;
-sub seven.tosf by seven.lf;
-sub eight.tosf by eight.lf;
-sub nine.tosf by nine.lf;
-";
-tag = case;
-},
-{
-automatic = 1;
-code = "lookupflag IgnoreMarks;
-sub f f ij by f_f_ij;
-sub w w w by w_w_w;
-sub s t by s_t;
-";
-tag = dlig;
-},
-{
-automatic = 1;
-code = "lookupflag IgnoreMarks;
-sub f f i by f_f_i;
-sub f f l by f_f_l;
-sub f f by f_f;
-sub f i by f_i;
-sub f l by f_l;
-";
-tag = liga;
-},
-{
-code = "sub zero by zero.zero;
-sub zero.lf by zero.lf.zero;
-sub zero.tf by zero.tf.zero;
-sub zero.tosf by zero.tosf.zero;
-sub zero.dnom by zero.dnom.zero;
-sub zero.numr by zero.numr.zero;
-sub zero.subs by zero.dnom.zero;
-sub zeroinferior by zero.dnom.zero;
-sub zerosuperior by zero.numr.zero;
-";
-tag = zero;
-},
-{
-automatic = 1;
-code = "pos @Uppercase <5 0 10 0>;
-";
-tag = cpsp;
-},
-{
-automatic = 1;
-code = "";
-tag = mkmk;
-},
-{
-code = "lookup CATALAN {
-    sub l periodcentered' l by periodcentered.loclCAT;
-    sub L periodcentered' L by periodcentered.loclCAT.case;
-} CATALAN;
-";
-tag = calt;
-},
-{
-code = "sub A by A.circled;
-sub B by B.circled;
-sub C by C.circled;
-sub D by D.circled;
-sub E by E.circled;
-sub F by F.circled;
-sub G by G.circled;
-sub H by H.circled;
-sub I by I.circled;
-sub J by J.circled;
-sub K by K.circled;
-sub L by L.circled;
-sub M by M.circled;
-sub N by N.circled;
-sub O by O.circled;
-sub P by P.circled;
-sub Q by Q.circled;
-sub R by R.circled;
-sub S by S.circled;
-sub T by T.circled;
-sub U by U.circled;
-sub V by V.circled;
-sub W by W.circled;
-sub X by X.circled;
-sub Y by Y.circled;
-sub Z by Z.circled;
-sub a by a.circled;
-sub b by b.circled;
-sub c by c.circled;
-sub d by d.circled;
-sub e by e.circled;
-sub f by f.circled;
-sub g by g.circled;
-sub h by h.circled;
-sub i by i.circled;
-sub j by j.circled;
-sub k by k.circled;
-sub l by l.circled;
-sub m by m.circled;
-sub n by n.circled;
-sub o by o.circled;
-sub p by p.circled;
-sub q by q.circled;
-sub r by r.circled;
-sub s by s.circled;
-sub t by t.circled;
-sub u by u.circled;
-sub v by v.circled;
-sub w by w.circled;
-sub x by x.circled;
-sub y by y.circled;
-sub z by z.circled;
-sub zero by zero.circled;
-sub one by one.circled;
-sub two by two.circled;
-sub three by three.circled;
-sub four by four.circled;
-sub five by five.circled;
-sub six by six.circled;
-sub seven by seven.circled;
-sub eight by eight.circled;
-sub nine by nine.circled;
-sub one zero by ten.circled;
-
-";
-labels = (
-{
-language = dflt;
-value = Circled;
-}
-);
-tag = ss03;
-},
-{
-code = "sub A by A.blackCircled;
-sub B by B.blackCircled;
-sub C by C.blackCircled;
-sub D by D.blackCircled;
-sub E by E.blackCircled;
-sub F by F.blackCircled;
-sub G by G.blackCircled;
-sub H by H.blackCircled;
-sub I by I.blackCircled;
-sub J by J.blackCircled;
-sub K by K.blackCircled;
-sub L by L.blackCircled;
-sub M by M.blackCircled;
-sub N by N.blackCircled;
-sub O by O.blackCircled;
-sub P by P.blackCircled;
-sub Q by Q.blackCircled;
-sub R by R.blackCircled;
-sub S by S.blackCircled;
-sub T by T.blackCircled;
-sub U by U.blackCircled;
-sub V by V.blackCircled;
-sub W by W.blackCircled;
-sub X by X.blackCircled;
-sub Y by Y.blackCircled;
-sub Z by Z.blackCircled;
-sub a by a.blackCircled;
-sub b by b.blackCircled;
-sub c by c.blackCircled;
-sub d by d.blackCircled;
-sub e by e.blackCircled;
-sub f by f.blackCircled;
-sub g by g.blackCircled;
-sub h by h.blackCircled;
-sub i by i.blackCircled;
-sub j by j.blackCircled;
-sub k by k.blackCircled;
-sub l by l.blackCircled;
-sub m by m.blackCircled;
-sub n by n.blackCircled;
-sub o by o.blackCircled;
-sub p by p.blackCircled;
-sub q by q.blackCircled;
-sub r by r.blackCircled;
-sub s by s.blackCircled;
-sub t by t.blackCircled;
-sub u by u.blackCircled;
-sub v by v.blackCircled;
-sub w by w.blackCircled;
-sub x by x.blackCircled;
-sub y by y.blackCircled;
-sub z by z.blackCircled;
-sub zero by zero.blackCircled;
-sub one by one.blackCircled;
-sub two by two.blackCircled;
-sub three by three.blackCircled;
-sub four by four.blackCircled;
-sub five by five.blackCircled;
-sub six by six.blackCircled;
-sub seven by seven.blackCircled;
-sub eight by eight.blackCircled;
-sub nine by nine.blackCircled;
-sub one zero by ten.blackCircled;
-";
-labels = (
-{
-language = dflt;
-value = "Black Circled";
-}
-);
-tag = ss04;
 },
 {
 automatic = 1;
@@ -918,258 +713,463 @@ sub Ncommaaccent.loclMAH by Ncommaaccent.loclMAH.sc;
 tag = c2sc;
 },
 {
-code = "sub a by A.sc;
-sub aacute by Aacute.sc;
-sub abreve by Abreve.sc;
-sub abreveacute by Abreveacute.sc;
-sub abrevedotbelow by Abrevedotbelow.sc;
-sub abrevegrave by Abrevegrave.sc;
-sub abrevehookabove by Abrevehookabove.sc;
-sub abrevetilde by Abrevetilde.sc;
-sub acaron by Acaron.sc;
-sub acircumflex by Acircumflex.sc;
-sub acircumflexacute by Acircumflexacute.sc;
-sub acircumflexdotbelow by Acircumflexdotbelow.sc;
-sub acircumflexgrave by Acircumflexgrave.sc;
-sub acircumflexhookabove by Acircumflexhookabove.sc;
-sub acircumflextilde by Acircumflextilde.sc;
-sub adblgrave by Adblgrave.sc;
-sub adieresis by Adieresis.sc;
-sub adotbelow by Adotbelow.sc;
-sub agrave by Agrave.sc;
-sub ahookabove by Ahookabove.sc;
-sub ainvertedbreve by Ainvertedbreve.sc;
-sub amacron by Amacron.sc;
-sub aogonek by Aogonek.sc;
-sub aring by Aring.sc;
-sub aringacute by Aringacute.sc;
-sub atilde by Atilde.sc;
-sub ae by AE.sc;
-sub aeacute by AEacute.sc;
-sub b by B.sc;
-sub bdotbelow by Bdotbelow.sc;
-sub c by C.sc;
-sub cacute by Cacute.sc;
-sub ccaron by Ccaron.sc;
-sub ccedilla by Ccedilla.sc;
-sub ccedillaacute by Ccedillaacute.sc;
-sub ccircumflex by Ccircumflex.sc;
-sub cdotaccent by Cdotaccent.sc;
-sub d by D.sc;
-sub dzcaron by DZcaron.sc;
-sub dcaron by Dcaron.sc;
-sub dcroat by Dcroat.sc;
-sub ddotbelow by Ddotbelow.sc;
-sub dmacronbelow by Dmacronbelow.sc;
-sub eth by Eth.sc;
-sub e by E.sc;
-sub eacute by Eacute.sc;
-sub ebreve by Ebreve.sc;
-sub ecaron by Ecaron.sc;
-sub ecedillabreve by Ecedillabreve.sc;
-sub ecircumflex by Ecircumflex.sc;
-sub ecircumflexacute by Ecircumflexacute.sc;
-sub ecircumflexdotbelow by Ecircumflexdotbelow.sc;
-sub ecircumflexgrave by Ecircumflexgrave.sc;
-sub ecircumflexhookabove by Ecircumflexhookabove.sc;
-sub ecircumflextilde by Ecircumflextilde.sc;
-sub edblgrave by Edblgrave.sc;
-sub edieresis by Edieresis.sc;
-sub edotaccent by Edotaccent.sc;
-sub edotbelow by Edotbelow.sc;
-sub egrave by Egrave.sc;
-sub ehookabove by Ehookabove.sc;
-sub einvertedbreve by Einvertedbreve.sc;
-sub emacron by Emacron.sc;
-sub emacronacute by Emacronacute.sc;
-sub emacrongrave by Emacrongrave.sc;
-sub eogonek by Eogonek.sc;
-sub etilde by Etilde.sc;
-sub schwa by Schwa.sc;
-sub f by F.sc;
-sub g by G.sc;
-sub gbreve by Gbreve.sc;
-sub gcaron by Gcaron.sc;
-sub gcircumflex by Gcircumflex.sc;
-sub gcommaaccent by Gcommaaccent.sc;
-sub gdotaccent by Gdotaccent.sc;
-sub gmacron by Gmacron.sc;
-sub h by H.sc;
-sub hbar by Hbar.sc;
-sub hbrevebelow by Hbrevebelow.sc;
-sub hcircumflex by Hcircumflex.sc;
-sub hdotbelow by Hdotbelow.sc;
-sub i by I.sc;
-sub ij by IJ.sc;
-sub iacute by Iacute.sc;
-sub ibreve by Ibreve.sc;
-sub icaron by Icaron.sc;
-sub icircumflex by Icircumflex.sc;
-sub idblgrave by Idblgrave.sc;
-sub idieresis by Idieresis.sc;
-sub idieresisacute by Idieresisacute.sc;
-sub idotaccent by Idotaccent.sc;
-sub idotbelow by Idotbelow.sc;
-sub igrave by Igrave.sc;
-sub ihookabove by Ihookabove.sc;
-sub iinvertedbreve by Iinvertedbreve.sc;
-sub imacron by Imacron.sc;
-sub iogonek by Iogonek.sc;
-sub itilde by Itilde.sc;
-sub itildebelow by Itildebelow.sc;
-sub j by J.sc;
-sub jacute by Jacute.sc;
-sub jcircumflex by Jcircumflex.sc;
-sub k by K.sc;
-sub kcommaaccent by Kcommaaccent.sc;
-sub kmacronbelow by Kmacronbelow.sc;
-sub l by L.sc;
-sub lj by LJ.sc;
-sub lacute by Lacute.sc;
-sub lcaron by Lcaron.sc;
-sub lcommaaccent by Lcommaaccent.sc;
-sub ldot by Ldot.sc;
-sub ldotbelow by Ldotbelow.sc;
-sub ldotbelowmacron by Ldotbelowmacron.sc;
-sub lmacronbelow by Lmacronbelow.sc;
-sub lslash by Lslash.sc;
-sub m by M.sc;
-sub mdotaccent by Mdotaccent.sc;
-sub mdotbelow by Mdotbelow.sc;
-sub n by N.sc;
-sub nj by NJ.sc;
-sub nacute by Nacute.sc;
-sub ncaron by Ncaron.sc;
-sub ncommaaccent by Ncommaaccent.sc;
-sub ndotaccent by Ndotaccent.sc;
-sub ndotbelow by Ndotbelow.sc;
-sub nhookleft by Nhookleft.sc;
-sub nmacronbelow by Nmacronbelow.sc;
-sub ntilde by Ntilde.sc;
-sub eng by Eng.sc;
-sub o by O.sc;
-sub oacute by Oacute.sc;
-sub obreve by Obreve.sc;
-sub ocaron by Ocaron.sc;
-sub ocircumflex by Ocircumflex.sc;
-sub ocircumflexacute by Ocircumflexacute.sc;
-sub ocircumflexdotbelow by Ocircumflexdotbelow.sc;
-sub ocircumflexgrave by Ocircumflexgrave.sc;
-sub ocircumflexhookabove by Ocircumflexhookabove.sc;
-sub ocircumflextilde by Ocircumflextilde.sc;
-sub odblgrave by Odblgrave.sc;
-sub odieresis by Odieresis.sc;
-sub odieresismacron by Odieresismacron.sc;
-sub odotaccentmacron by Odotaccentmacron.sc;
-sub odotbelow by Odotbelow.sc;
-sub ograve by Ograve.sc;
-sub ohookabove by Ohookabove.sc;
-sub ohorn by Ohorn.sc;
-sub ohornacute by Ohornacute.sc;
-sub ohorndotbelow by Ohorndotbelow.sc;
-sub ohorngrave by Ohorngrave.sc;
-sub ohornhookabove by Ohornhookabove.sc;
-sub ohorntilde by Ohorntilde.sc;
-sub ohungarumlaut by Ohungarumlaut.sc;
-sub oinvertedbreve by Oinvertedbreve.sc;
-sub omacron by Omacron.sc;
-sub omacronacute by Omacronacute.sc;
-sub omacrongrave by Omacrongrave.sc;
-sub oogonek by Oogonek.sc;
-sub oslash by Oslash.sc;
-sub oslashacute by Oslashacute.sc;
-sub otilde by Otilde.sc;
-sub otildeacute by Otildeacute.sc;
-sub otildedieresis by Otildedieresis.sc;
-sub otildemacron by Otildemacron.sc;
-sub oe by OE.sc;
-sub p by P.sc;
-sub pdotaccent by Pdotaccent.sc;
-sub thorn by Thorn.sc;
-sub q by Q.sc;
-sub r by R.sc;
-sub racute by Racute.sc;
-sub rcaron by Rcaron.sc;
-sub rcommaaccent by Rcommaaccent.sc;
-sub rdblgrave by Rdblgrave.sc;
-sub rdotbelow by Rdotbelow.sc;
-sub rdotbelowmacron by Rdotbelowmacron.sc;
-sub rinvertedbreve by Rinvertedbreve.sc;
-sub rmacronbelow by Rmacronbelow.sc;
-sub s by S.sc;
-sub sacute by Sacute.sc;
-sub sacutedotaccent by Sacutedotaccent.sc;
-sub scaron by Scaron.sc;
-sub scarondotaccent by Scarondotaccent.sc;
-sub scedilla by Scedilla.sc;
-sub scircumflex by Scircumflex.sc;
-sub scommaaccent by Scommaaccent.sc;
-sub sdotaccent by Sdotaccent.sc;
-sub sdotbelow by Sdotbelow.sc;
-sub sdotbelowdotaccent by Sdotbelowdotaccent.sc;
-sub germandbls by Germandbls.sc;
-sub t by T.sc;
-sub tbar by Tbar.sc;
-sub tcaron by Tcaron.sc;
-sub tcedilla by Tcedilla.sc;
-sub tcommaaccent by Tcommaaccent.sc;
-sub tdotbelow by Tdotbelow.sc;
-sub tmacronbelow by Tmacronbelow.sc;
-sub u by U.sc;
-sub uacute by Uacute.sc;
-sub ubreve by Ubreve.sc;
-sub ucaron by Ucaron.sc;
-sub ucircumflex by Ucircumflex.sc;
-sub udblgrave by Udblgrave.sc;
-sub udieresis by Udieresis.sc;
-sub udieresisacute by Udieresisacute.sc;
-sub udieresiscaron by Udieresiscaron.sc;
-sub udieresisgrave by Udieresisgrave.sc;
-sub udieresismacron by Udieresismacron.sc;
-sub udotbelow by Udotbelow.sc;
-sub ugrave by Ugrave.sc;
-sub uhookabove by Uhookabove.sc;
-sub uhorn by Uhorn.sc;
-sub uhornacute by Uhornacute.sc;
-sub uhorndotbelow by Uhorndotbelow.sc;
-sub uhorngrave by Uhorngrave.sc;
-sub uhornhookabove by Uhornhookabove.sc;
-sub uhorntilde by Uhorntilde.sc;
-sub uhungarumlaut by Uhungarumlaut.sc;
-sub uinvertedbreve by Uinvertedbreve.sc;
-sub umacron by Umacron.sc;
-sub umacrondieresis by Umacrondieresis.sc;
-sub uogonek by Uogonek.sc;
-sub uring by Uring.sc;
-sub utilde by Utilde.sc;
-sub utildeacute by Utildeacute.sc;
-sub v by V.sc;
-sub w by W.sc;
-sub wacute by Wacute.sc;
-sub wcircumflex by Wcircumflex.sc;
-sub wdieresis by Wdieresis.sc;
-sub wgrave by Wgrave.sc;
-sub x by X.sc;
-sub y by Y.sc;
-sub yacute by Yacute.sc;
-sub ycircumflex by Ycircumflex.sc;
-sub ydieresis by Ydieresis.sc;
-sub ydotaccent by Ydotaccent.sc;
-sub ydotbelow by Ydotbelow.sc;
-sub ygrave by Ygrave.sc;
-sub yhookabove by Yhookabove.sc;
-sub ymacron by Ymacron.sc;
-sub ytilde by Ytilde.sc;
-sub z by Z.sc;
-sub zacute by Zacute.sc;
-sub zcaron by Zcaron.sc;
-sub zdotaccent by Zdotaccent.sc;
-sub zdotbelow by Zdotbelow.sc;
-sub saltillo by Saltillo.sc;
-sub lcommaaccent.loclMAH by Lcommaaccent.loclMAH.sc;
-sub Ncommaaccent.loclMAH by Ncommaaccent.loclMAH.sc;
+code = "lookup ccmp_Other_1 {
+	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+	@CombiningNonTopAccents = [brevebelowcomb cedillacomb dotbelowcomb macronbelowcomb ogonekcomb tildebelowcomb];
+	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
+} ccmp_Other_1;
+
+lookup ccmp_latn_1 {
+	sub Ldot by L periodcentered.loclCAT.case;
+} ccmp_latn_1;
+
+script latn;
+lookup ccmp_latn_1;
+
+lookup ccmp_soft_dotted {
+    lookupflag UseMarkFilteringSet @CombiningTopAccents;
+    sub [i j idotbelow iogonek itildebelow ]' @CombiningTopAccents by [idotless jdotless idotless_dotbelowcomb idotless_ogonekcomb idotless_tildebelowcomb];
+} ccmp_soft_dotted;
 ";
-tag = smcp;
+tag = ccmp;
+},
+{
+code = "script latn;
+language AZE;
+lookup locl_latn_0 {
+	sub i by idotaccent;
+} locl_latn_0;
+language CRT;
+lookup locl_latn_0;
+language KAZ;
+lookup locl_latn_0;
+language TAT;
+lookup locl_latn_0;
+language TRK;
+lookup locl_latn_0;
+
+script latn;
+language ROM;
+lookup locl_latn_1 {
+	sub Scedilla by Scommaaccent;
+	sub scedilla by scommaaccent;
+	sub Tcedilla by Tcommaaccent;
+	sub tcedilla by tcommaaccent;
+} locl_latn_1;
+language MOL;
+lookup locl_latn_1;
+
+script latn;
+language MAH;
+lookup locl_latn_2 {
+	sub Lcommaaccent by Lcommaaccent.loclMAH;
+	sub Ncommaaccent by Ncommaaccent.loclMAH;
+	sub lcommaaccent by lcommaaccent.loclMAH;
+	sub ncommaaccent by ncommaaccent.loclMAH;
+	sub commaaccentcomb by commaaccentcomb.loclMAH;
+} locl_latn_2;
+
+script latn;
+language CAT;
+lookup locl_latn_3 {
+	sub l periodcentered' l by periodcentered.loclCAT;
+	sub L periodcentered' L by periodcentered.loclCAT.case;
+	sub L.sc periodcentered' L.sc by periodcentered.loclCAT.case;
+} locl_latn_3;
+
+script latn;
+language NLD;
+lookup locl_latn_4 {
+	sub iacute j' by jacute;
+	sub Iacute J' by Jacute;
+} locl_latn_4;
+";
+tag = locl;
+},
+{
+code = "sub zero by zero.subs;
+sub one by one.subs;
+sub two by two.subs;
+sub three by three.subs;
+sub four by four.subs;
+sub five by five.subs;
+sub six by six.subs;
+sub seven by seven.subs;
+sub eight by eight.subs;
+sub nine by nine.subs;
+";
+tag = subs;
+},
+{
+automatic = 1;
+code = "sub zero by zero.lf;
+sub one by one.lf;
+sub two by two.lf;
+sub three by three.lf;
+sub four by four.lf;
+sub five by five.lf;
+sub six by six.lf;
+sub seven by seven.lf;
+sub eight by eight.lf;
+sub nine by nine.lf;
+";
+tag = lnum;
+},
+{
+automatic = 1;
+code = "sub zero.tf by zero.lf;
+sub one.tf by one.lf;
+sub two.tf by two.lf;
+sub three.tf by three.lf;
+sub four.tf by four.lf;
+sub five.tf by five.lf;
+sub six.tf by six.lf;
+sub seven.tf by seven.lf;
+sub eight.tf by eight.lf;
+sub nine.tf by nine.lf;
+sub zero.tosf by zero;
+sub one.tosf by one;
+sub two.tosf by two;
+sub three.tosf by three;
+sub four.tosf by four;
+sub five.tosf by five;
+sub six.tosf by six;
+sub seven.tosf by seven;
+sub eight.tosf by eight;
+sub nine.tosf by nine;
+";
+tag = pnum;
+},
+{
+automatic = 1;
+code = "sub zero.lf by zero.tf;
+sub one.lf by one.tf;
+sub two.lf by two.tf;
+sub three.lf by three.tf;
+sub four.lf by four.tf;
+sub five.lf by five.tf;
+sub six.lf by six.tf;
+sub seven.lf by seven.tf;
+sub eight.lf by eight.tf;
+sub nine.lf by nine.tf;
+sub zero by zero.tosf;
+sub one by one.tosf;
+sub two by two.tosf;
+sub three by three.tosf;
+sub four by four.tosf;
+sub five by five.tosf;
+sub six by six.tosf;
+sub seven by seven.tosf;
+sub eight by eight.tosf;
+sub nine by nine.tosf;
+";
+tag = tnum;
+},
+{
+automatic = 1;
+code = "sub zero.lf by zero;
+sub one.lf by one;
+sub two.lf by two;
+sub three.lf by three;
+sub four.lf by four;
+sub five.lf by five;
+sub six.lf by six;
+sub seven.lf by seven;
+sub eight.lf by eight;
+sub nine.lf by nine;
+sub zero.tf by zero.tosf;
+sub one.tf by one.tosf;
+sub two.tf by two.tosf;
+sub three.tf by three.tosf;
+sub four.tf by four.tosf;
+sub five.tf by five.tosf;
+sub six.tf by six.tosf;
+sub seven.tf by seven.tosf;
+sub eight.tf by eight.tosf;
+sub nine.tf by nine.tosf;
+sub zero by zero.osf;
+sub one by one.osf;
+sub two by two.osf;
+sub three by three.osf;
+sub four by four.osf;
+sub five by five.osf;
+sub six by six.osf;
+sub seven by seven.osf;
+sub eight by eight.osf;
+sub nine by nine.osf;
+";
+tag = onum;
+},
+{
+automatic = 1;
+code = "sub exclam by exclam.case;
+sub exclamdown by exclamdown.case;
+sub question by question.case;
+sub questiondown by questiondown.case;
+sub periodcentered by periodcentered.case;
+sub interrobang by interrobang.case;
+sub questionexclamation by questionexclamation.case;
+sub slash by slash.case;
+sub backslash by backslash.case;
+sub periodcentered.loclCAT by periodcentered.loclCAT.case;
+sub hyphen by hyphen.case;
+sub endash by endash.case;
+sub emdash by emdash.case;
+sub parenleft by parenleft.case;
+sub parenright by parenright.case;
+sub braceleft by braceleft.case;
+sub braceright by braceright.case;
+sub bracketleft by bracketleft.case;
+sub bracketright by bracketright.case;
+sub guillemetleft by guillemetleft.case;
+sub guillemetright by guillemetright.case;
+sub guilsinglleft by guilsinglleft.case;
+sub guilsinglright by guilsinglright.case;
+sub bar by bar.case;
+sub brokenbar by brokenbar.case;
+sub plus by plus.case;
+sub minus by minus.case;
+sub multiply by multiply.case;
+sub divide by divide.case;
+sub equal by equal.case;
+sub notequal by notequal.case;
+sub greater by greater.case;
+sub less by less.case;
+sub greaterequal by greaterequal.case;
+sub lessequal by lessequal.case;
+sub plusminus by plusminus.case;
+sub zero by zero.lf;
+sub one by one.lf;
+sub two by two.lf;
+sub three by three.lf;
+sub four by four.lf;
+sub five by five.lf;
+sub six by six.lf;
+sub seven by seven.lf;
+sub eight by eight.lf;
+sub nine by nine.lf;
+sub zero.osf by zero.lf;
+sub one.osf by one.lf;
+sub two.osf by two.lf;
+sub three.osf by three.lf;
+sub four.osf by four.lf;
+sub five.osf by five.lf;
+sub six.osf by six.lf;
+sub seven.osf by seven.lf;
+sub eight.osf by eight.lf;
+sub nine.osf by nine.lf;
+sub zero.tosf by zero.lf;
+sub one.tosf by one.lf;
+sub two.tosf by two.lf;
+sub three.tosf by three.lf;
+sub four.tosf by four.lf;
+sub five.tosf by five.lf;
+sub six.tosf by six.lf;
+sub seven.tosf by seven.lf;
+sub eight.tosf by eight.lf;
+sub nine.tosf by nine.lf;
+";
+tag = case;
+},
+{
+automatic = 1;
+code = "lookupflag IgnoreMarks;
+sub f f ij by f_f_ij;
+sub w w w by w_w_w;
+sub s t by s_t;
+";
+tag = dlig;
+},
+{
+automatic = 1;
+code = "lookupflag IgnoreMarks;
+sub f f i by f_f_i;
+sub f f l by f_f_l;
+sub f f by f_f;
+sub f i by f_i;
+sub f l by f_l;
+";
+tag = liga;
+},
+{
+automatic = 1;
+code = "sub zero by zero.zero;
+sub zero.lf by zero.lf.zero;
+sub zero.osf by zero.osf.zero;
+sub zero.tf by zero.tf.zero;
+sub zero.tosf by zero.tosf.zero;
+sub zero.dnom by zero.dnom.zero;
+sub zero.numr by zero.numr.zero;
+sub zeroinferior by zeroinferior.zero;
+sub zerosuperior by zerosuperior.zero;
+";
+tag = zero;
+},
+{
+automatic = 1;
+code = "pos @Uppercase <5 0 10 0>;
+";
+tag = cpsp;
+},
+{
+automatic = 1;
+code = "";
+tag = mkmk;
+},
+{
+code = "lookup CATALAN {
+    sub l periodcentered' l by periodcentered.loclCAT;
+    sub L periodcentered' L by periodcentered.loclCAT.case;
+} CATALAN;
+";
+tag = calt;
+},
+{
+code = "sub A by A.circled;
+sub B by B.circled;
+sub C by C.circled;
+sub D by D.circled;
+sub E by E.circled;
+sub F by F.circled;
+sub G by G.circled;
+sub H by H.circled;
+sub I by I.circled;
+sub J by J.circled;
+sub K by K.circled;
+sub L by L.circled;
+sub M by M.circled;
+sub N by N.circled;
+sub O by O.circled;
+sub P by P.circled;
+sub Q by Q.circled;
+sub R by R.circled;
+sub S by S.circled;
+sub T by T.circled;
+sub U by U.circled;
+sub V by V.circled;
+sub W by W.circled;
+sub X by X.circled;
+sub Y by Y.circled;
+sub Z by Z.circled;
+sub a by a.circled;
+sub b by b.circled;
+sub c by c.circled;
+sub d by d.circled;
+sub e by e.circled;
+sub f by f.circled;
+sub g by g.circled;
+sub h by h.circled;
+sub i by i.circled;
+sub j by j.circled;
+sub k by k.circled;
+sub l by l.circled;
+sub m by m.circled;
+sub n by n.circled;
+sub o by o.circled;
+sub p by p.circled;
+sub q by q.circled;
+sub r by r.circled;
+sub s by s.circled;
+sub t by t.circled;
+sub u by u.circled;
+sub v by v.circled;
+sub w by w.circled;
+sub x by x.circled;
+sub y by y.circled;
+sub z by z.circled;
+sub zero by zero.circled;
+sub one by one.circled;
+sub two by two.circled;
+sub three by three.circled;
+sub four by four.circled;
+sub five by five.circled;
+sub six by six.circled;
+sub seven by seven.circled;
+sub eight by eight.circled;
+sub nine by nine.circled;
+sub one zero by ten.circled;
+
+";
+labels = (
+{
+language = dflt;
+value = Circled;
+}
+);
+tag = ss03;
+},
+{
+code = "sub A by A.blackCircled;
+sub B by B.blackCircled;
+sub C by C.blackCircled;
+sub D by D.blackCircled;
+sub E by E.blackCircled;
+sub F by F.blackCircled;
+sub G by G.blackCircled;
+sub H by H.blackCircled;
+sub I by I.blackCircled;
+sub J by J.blackCircled;
+sub K by K.blackCircled;
+sub L by L.blackCircled;
+sub M by M.blackCircled;
+sub N by N.blackCircled;
+sub O by O.blackCircled;
+sub P by P.blackCircled;
+sub Q by Q.blackCircled;
+sub R by R.blackCircled;
+sub S by S.blackCircled;
+sub T by T.blackCircled;
+sub U by U.blackCircled;
+sub V by V.blackCircled;
+sub W by W.blackCircled;
+sub X by X.blackCircled;
+sub Y by Y.blackCircled;
+sub Z by Z.blackCircled;
+sub a by a.blackCircled;
+sub b by b.blackCircled;
+sub c by c.blackCircled;
+sub d by d.blackCircled;
+sub e by e.blackCircled;
+sub f by f.blackCircled;
+sub g by g.blackCircled;
+sub h by h.blackCircled;
+sub i by i.blackCircled;
+sub j by j.blackCircled;
+sub k by k.blackCircled;
+sub l by l.blackCircled;
+sub m by m.blackCircled;
+sub n by n.blackCircled;
+sub o by o.blackCircled;
+sub p by p.blackCircled;
+sub q by q.blackCircled;
+sub r by r.blackCircled;
+sub s by s.blackCircled;
+sub t by t.blackCircled;
+sub u by u.blackCircled;
+sub v by v.blackCircled;
+sub w by w.blackCircled;
+sub x by x.blackCircled;
+sub y by y.blackCircled;
+sub z by z.blackCircled;
+sub zero by zero.blackCircled;
+sub one by one.blackCircled;
+sub two by two.blackCircled;
+sub three by three.blackCircled;
+sub four by four.blackCircled;
+sub five by five.blackCircled;
+sub six by six.blackCircled;
+sub seven by seven.blackCircled;
+sub eight by eight.blackCircled;
+sub nine by nine.blackCircled;
+sub one zero by ten.blackCircled;
+";
+labels = (
+{
+language = dflt;
+value = "Black Circled";
+}
+);
+tag = ss04;
 }
 );
 fontMaster = (
@@ -2001,7 +2001,6 @@ type = TTStem;
 horizontal = 1;
 options = 4;
 origin = (0,30,0,32);
-stem = 1000;
 target = (1,4);
 type = TTStem;
 },
@@ -44689,7 +44688,7 @@ unicode = 7713;
 glyphname = h;
 kernLeft = h;
 kernRight = h;
-lastChange = "2025-02-26 16:27:39 +0000";
+lastChange = "2025-02-27 15:15:41 +0000";
 layers = (
 {
 anchors = (
@@ -44699,6 +44698,408 @@ pos = (251,0);
 }
 );
 layerId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
+shapes = (
+{
+closed = 1;
+nodes = (
+(222,33,ls),
+(179,33,o),
+(158,50,o),
+(158,97,cs),
+(158,311.865,l),
+(179.038,372.48,o),
+(218.81,411.488,o),
+(278.362,411.488,cs),
+(342.052,411.488,o),
+(366,378.439,o),
+(366,318.741,cs),
+(366,96,ls),
+(366,49,o),
+(343,33,o),
+(311,33,cs),
+(308,33,ls),
+(300,33,o),
+(295,28,o),
+(295,20,cs),
+(295,13,ls),
+(295,4,o),
+(300,0,o),
+(308,0,cs),
+(499,0,ls),
+(507,0,o),
+(512,4,o),
+(512,13,cs),
+(512,20,ls),
+(512,28,o),
+(507,33,o),
+(499,33,cs),
+(497,33,ls),
+(454,33,o),
+(432,49,o),
+(432,96,cs),
+(432,319,ls),
+(432,419,o),
+(365,451,o),
+(300,451,cs),
+(223.347,451,o),
+(174.953,397.224,o),
+(158,360.184,c),
+(158,703,ls),
+(158,704,o),
+(157,704,o),
+(156,704,cs),
+(155,704,ls),
+(153,704,o),
+(151,703,o),
+(148,699,cs),
+(118,658,o),
+(81,638,o),
+(42,621,cs),
+(35,618,o),
+(29,617,o),
+(29,610,cs),
+(29,600,ls),
+(29,594,o),
+(31,589,o),
+(40,588,cs),
+(88,583,o),
+(92,555,o),
+(92,506,cs),
+(92,96,ls),
+(92,49,o),
+(71,33,o),
+(28,33,cs),
+(26,33,ls),
+(18,33,o),
+(13,28,o),
+(13,20,cs),
+(13,13,ls),
+(13,4,o),
+(19,0,o),
+(28,0,cs),
+(223,0,ls),
+(232,0,o),
+(238,4,o),
+(238,13,cs),
+(238,20,ls),
+(238,28,o),
+(234,33,o),
+(225,33,cs)
+);
+}
+);
+width = 531;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (309,0);
+}
+);
+layerId = m002;
+shapes = (
+{
+closed = 1;
+nodes = (
+(276,53,ls),
+(233,53,o),
+(212,90,o),
+(212,137,cs),
+(212,301.176,l),
+(235.17,345.433,o),
+(282.139,374,o),
+(323,374,cs),
+(377,374,o),
+(390,346,o),
+(390,287,cs),
+(390,136,ls),
+(390,89,o),
+(378,53,o),
+(346,53,cs),
+(338,53,ls),
+(330,53,o),
+(325,48,o),
+(325,40,cs),
+(325,13,ls),
+(325,4,o),
+(330,0,o),
+(338,0,cs),
+(577,0,ls),
+(585,0,o),
+(590,4,o),
+(590,13,cs),
+(590,40,ls),
+(590,48,o),
+(585,53,o),
+(577,53,cs),
+(575,53,ls),
+(532,53,o),
+(510,89,o),
+(510,136,cs),
+(510,299,ls),
+(510,419,o),
+(443,451,o),
+(361,451,cs),
+(285.367,451,o),
+(236.935,399.76,o),
+(212,358.84,c),
+(212,702,ls),
+(212,703,o),
+(211,704,o),
+(210,704,cs),
+(209,704,ls),
+(207,704,o),
+(207,704,o),
+(204,702,cs),
+(154,662,o),
+(115,638,o),
+(42,621,cs),
+(33,619,o),
+(29,617,o),
+(29,610,cs),
+(29,580,ls),
+(29,574,o),
+(31,569,o),
+(40,568,cs),
+(88,563,o),
+(92,515,o),
+(92,466,cs),
+(92,136,ls),
+(92,89,o),
+(71,53,o),
+(28,53,cs),
+(26,53,ls),
+(18,53,o),
+(13,48,o),
+(13,40,cs),
+(13,13,ls),
+(13,4,o),
+(19,0,o),
+(28,0,cs),
+(277,0,ls),
+(286,0,o),
+(292,4,o),
+(292,13,cs),
+(292,40,ls),
+(292,48,o),
+(288,53,o),
+(279,53,cs)
+);
+}
+);
+width = 599;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (209,0);
+}
+);
+layerId = m003;
+shapes = (
+{
+closed = 1;
+nodes = (
+(186.415,33,ls),
+(143.415,33,o),
+(125.719,50,o),
+(134.855,97,cs),
+(164.765,250.873,l),
+(189.485,378.046,o),
+(256.794,411.488,o),
+(316.347,411.488,cs),
+(380.037,411.488,o),
+(397.561,378.439,o),
+(385.957,318.741,cs),
+(342.661,96,ls),
+(333.525,49,o),
+(307.415,33,o),
+(275.415,33,cs),
+(272.415,33,ls),
+(264.415,33,o),
+(258.443,28,o),
+(256.888,20,cs),
+(255.527,13,ls),
+(253.778,4,o),
+(258,0,o),
+(266,0,cs),
+(457,0,ls),
+(465,0,o),
+(470.778,4,o),
+(472.527,13,cs),
+(473.888,20,ls),
+(475.443,28,o),
+(471.415,33,o),
+(463.415,33,cs),
+(461.415,33,ls),
+(418.415,33,o),
+(399.525,49,o),
+(408.661,96,cs),
+(452.007,319,ls),
+(471.445,419,o),
+(410.666,451,o),
+(345.666,451,cs),
+(269.013,451,o),
+(210.166,410.188,o),
+(186.013,360.184,c),
+(252.649,703,ls),
+(252.844,704,o),
+(251.844,704,o),
+(250.844,704,cs),
+(249.844,704,ls),
+(247.844,704,o),
+(245.649,703,o),
+(241.872,699,cs),
+(203.902,658,o),
+(163.015,638,o),
+(120.71,621,cs),
+(113.127,618,o),
+(106.933,617,o),
+(105.572,610,cs),
+(103.628,600,ls),
+(102.462,594,o),
+(103.49,589,o),
+(112.296,588,cs),
+(159.324,583,o),
+(157.881,555,o),
+(148.356,506,cs),
+(68.661,96,ls),
+(59.525,49,o),
+(35.415,33,o),
+(-7.585,33,cs),
+(-9.585,33,ls),
+(-17.585,33,o),
+(-23.557,28,o),
+(-25.112,20,cs),
+(-26.473,13,ls),
+(-28.222,4,o),
+(-23,0,o),
+(-14,0,cs),
+(181,0,ls),
+(190,0,o),
+(196.778,4,o),
+(198.527,13,cs),
+(199.888,20,ls),
+(201.443,28,o),
+(198.415,33,o),
+(189.415,33,cs)
+);
+}
+);
+width = 531;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (267,0);
+}
+);
+layerId = m004;
+shapes = (
+{
+closed = 1;
+nodes = (
+(244.302,53,ls),
+(201.302,53,o),
+(187.494,90,o),
+(196.63,137,cs),
+(220.061,257.543,l),
+(238.507,352.437,o),
+(312.837,374,o),
+(353.698,374,cs),
+(407.698,374,o),
+(415.256,346,o),
+(403.787,287,cs),
+(374.436,136,ls),
+(365.3,89,o),
+(346.302,53,o),
+(314.302,53,cs),
+(306.302,53,ls),
+(298.302,53,o),
+(292.33,48,o),
+(290.775,40,cs),
+(285.527,13,ls),
+(283.778,4,o),
+(288,0,o),
+(296,0,cs),
+(535,0,ls),
+(543,0,o),
+(548.778,4,o),
+(550.527,13,cs),
+(555.775,40,ls),
+(557.33,48,o),
+(553.302,53,o),
+(545.302,53,cs),
+(543.302,53,ls),
+(500.302,53,o),
+(485.3,89,o),
+(494.436,136,cs),
+(526.12,299,ls),
+(549.445,419,o),
+(488.666,451,o),
+(406.666,451,cs),
+(331.033,451,o),
+(262.189,412.076,o),
+(239.751,358.84,c),
+(306.455,702,ls),
+(306.649,703,o),
+(305.844,704,o),
+(304.844,704,cs),
+(303.844,704,ls),
+(301.844,704,o),
+(301.844,704,o),
+(298.455,702,cs),
+(240.68,662,o),
+(197.015,638,o),
+(120.71,621,cs),
+(111.321,619,o),
+(106.933,617,o),
+(105.572,610,cs),
+(99.741,580,ls),
+(98.574,574,o),
+(99.602,569,o),
+(108.408,568,cs),
+(155.436,563,o),
+(150.106,515,o),
+(140.581,466,cs),
+(76.436,136,ls),
+(67.3,89,o),
+(39.302,53,o),
+(-3.698,53,cs),
+(-5.698,53,ls),
+(-13.698,53,o),
+(-19.67,48,o),
+(-21.225,40,cs),
+(-26.473,13,ls),
+(-28.222,4,o),
+(-23,0,o),
+(-14,0,cs),
+(235,0,ls),
+(244,0,o),
+(250.778,4,o),
+(252.527,13,cs),
+(257.775,40,ls),
+(259.33,48,o),
+(256.302,53,o),
+(247.302,53,cs)
+);
+}
+);
+width = 599;
+},
+{
+anchors = (
+{
+name = bottom;
+pos = (251,0);
+}
+);
+associatedMasterId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
+layerId = "DE24E9C2-043C-4B51-A99F-FD77437C6F40";
+name = "27 févr. 25 à 16:15";
 shapes = (
 {
 closed = 1;
@@ -44803,7 +45204,9 @@ name = bottom;
 pos = (309,0);
 }
 );
-layerId = m002;
+associatedMasterId = m002;
+layerId = "FD365B2A-689C-44EB-B920-25CF3FB0BCA3";
+name = "27 févr. 25 à 16:15";
 shapes = (
 {
 closed = 1;
@@ -44908,7 +45311,9 @@ name = bottom;
 pos = (209,0);
 }
 );
-layerId = m003;
+associatedMasterId = m003;
+layerId = "62147E10-6C5A-4B87-B02D-FC926F6B9B81";
+name = "27 févr. 25 à 16:15";
 shapes = (
 {
 closed = 1;
@@ -45013,7 +45418,9 @@ name = bottom;
 pos = (267,0);
 }
 );
-layerId = m004;
+associatedMasterId = m004;
+layerId = "DCFAD895-2A1B-4064-B791-BD28459B12B1";
+name = "27 févr. 25 à 16:15";
 shapes = (
 {
 closed = 1;
@@ -71970,13 +72377,13 @@ width = 599;
 glyphname = f_f;
 kernLeft = f;
 kernRight = a;
-lastChange = "2025-02-27 09:08:29 +0000";
+lastChange = "2025-02-27 15:02:57 +0000";
 layers = (
 {
 anchors = (
 {
 name = caret_1;
-pos = (344,0);
+pos = (281,0);
 }
 );
 layerId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
@@ -72062,7 +72469,7 @@ width = 562;
 anchors = (
 {
 name = caret_1;
-pos = (344,0);
+pos = (343.805,0);
 }
 );
 layerId = m002;
@@ -72148,7 +72555,7 @@ width = 687.61;
 anchors = (
 {
 name = caret_1;
-pos = (344,0);
+pos = (281,0);
 }
 );
 layerId = m003;
@@ -72234,7 +72641,7 @@ width = 562;
 anchors = (
 {
 name = caret_1;
-pos = (344,0);
+pos = (343.805,0);
 }
 );
 layerId = m004;
@@ -72325,9 +72732,19 @@ unicode = 64256;
 glyphname = f_f_i;
 kernLeft = f;
 kernRight = a;
-lastChange = "2025-02-27 09:08:38 +0000";
+lastChange = "2025-02-27 15:03:03 +0000";
 layers = (
 {
+anchors = (
+{
+name = caret_1;
+pos = (288.09,0);
+},
+{
+name = caret_2;
+pos = (576.18,0);
+}
+);
 layerId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
 shapes = (
 {
@@ -72445,6 +72862,16 @@ ref = f;
 width = 864.27;
 },
 {
+anchors = (
+{
+name = caret_1;
+pos = (326.333,0);
+},
+{
+name = caret_2;
+pos = (652.667,0);
+}
+);
 layerId = m002;
 shapes = (
 {
@@ -72562,6 +72989,16 @@ ref = f;
 width = 979;
 },
 {
+anchors = (
+{
+name = caret_1;
+pos = (288.09,0);
+},
+{
+name = caret_2;
+pos = (576.18,0);
+}
+);
 layerId = m003;
 shapes = (
 {
@@ -72679,6 +73116,16 @@ ref = f;
 width = 864.27;
 },
 {
+anchors = (
+{
+name = caret_1;
+pos = (326.333,0);
+},
+{
+name = caret_2;
+pos = (652.667,0);
+}
+);
 layerId = m004;
 shapes = (
 {
@@ -72804,7 +73251,7 @@ unicode = 64259;
 glyphname = f_f_ij;
 kernLeft = f;
 kernRight = j;
-lastChange = "2025-02-27 11:25:17 +0000";
+lastChange = "2025-02-27 15:03:11 +0000";
 layers = (
 {
 anchors = (
@@ -72822,11 +73269,11 @@ pos = (979,0);
 },
 {
 name = caret_1;
-pos = (392,0);
+pos = (341.95,0);
 },
 {
 name = caret_2;
-pos = (783,0);
+pos = (683.9,0);
 },
 {
 name = top_1;
@@ -72870,11 +73317,11 @@ pos = (979,0);
 },
 {
 name = caret_1;
-pos = (392,0);
+pos = (395.48,0);
 },
 {
 name = caret_2;
-pos = (783,0);
+pos = (790.96,0);
 },
 {
 name = top_1;
@@ -72918,11 +73365,11 @@ pos = (979,0);
 },
 {
 name = caret_1;
-pos = (392,0);
+pos = (350.857,0);
 },
 {
 name = caret_2;
-pos = (783,0);
+pos = (701.713,0);
 },
 {
 name = top_1;
@@ -72966,11 +73413,11 @@ pos = (979,0);
 },
 {
 name = caret_1;
-pos = (392,0);
+pos = (404.047,0);
 },
 {
 name = caret_2;
-pos = (783,0);
+pos = (808.093,0);
 },
 {
 name = top_1;
@@ -73006,7 +73453,7 @@ metricRight = ij;
 glyphname = f_f_l;
 kernLeft = f;
 kernRight = a;
-lastChange = "2025-02-27 09:08:48 +0000";
+lastChange = "2025-02-27 15:03:16 +0000";
 layers = (
 {
 anchors = (
@@ -73024,11 +73471,11 @@ pos = (784,0);
 },
 {
 name = caret_1;
-pos = (324,0);
+pos = (274.213,0);
 },
 {
 name = caret_2;
-pos = (649,0);
+pos = (548.427,0);
 },
 {
 name = middle;
@@ -73185,11 +73632,11 @@ pos = (837,0);
 },
 {
 name = caret_1;
-pos = (324,0);
+pos = (332.837,0);
 },
 {
 name = caret_2;
-pos = (649,0);
+pos = (665.673,0);
 },
 {
 name = middle;
@@ -73346,11 +73793,11 @@ pos = (784,0);
 },
 {
 name = caret_1;
-pos = (324,0);
+pos = (274.213,0);
 },
 {
 name = caret_2;
-pos = (649,0);
+pos = (548.427,0);
 },
 {
 name = middle;
@@ -73507,11 +73954,11 @@ pos = (837,0);
 },
 {
 name = caret_1;
-pos = (324,0);
+pos = (332.837,0);
 },
 {
 name = caret_2;
-pos = (649,0);
+pos = (665.673,0);
 },
 {
 name = middle;
@@ -73661,7 +74108,7 @@ unicode = 64260;
 glyphname = f_i;
 kernLeft = f;
 kernRight = a;
-lastChange = "2025-02-27 09:09:10 +0000";
+lastChange = "2025-02-27 15:03:22 +0000";
 layers = (
 {
 anchors = (
@@ -73675,7 +74122,7 @@ pos = (469,0);
 },
 {
 name = caret_1;
-pos = (313,0);
+pos = (286,0);
 },
 {
 name = top_1;
@@ -73822,7 +74269,7 @@ pos = (469,0);
 },
 {
 name = caret_1;
-pos = (313,0);
+pos = (312.5,0);
 },
 {
 name = top_1;
@@ -73958,7 +74405,7 @@ pos = (427,0);
 },
 {
 name = caret_1;
-pos = (271,0);
+pos = (286,0);
 },
 {
 name = top_1;
@@ -74105,7 +74552,7 @@ pos = (427,0);
 },
 {
 name = caret_1;
-pos = (271,0);
+pos = (312.5,0);
 },
 {
 name = top_1;
@@ -74239,7 +74686,7 @@ unicode = 64257;
 glyphname = f_l;
 kernLeft = f;
 kernRight = a;
-lastChange = "2025-02-27 09:09:10 +0000";
+lastChange = "2025-02-27 15:03:26 +0000";
 layers = (
 {
 anchors = (
@@ -74257,7 +74704,7 @@ pos = (483,0);
 },
 {
 name = caret_1;
-pos = (322,0);
+pos = (260.82,0);
 },
 {
 name = middle;
@@ -74411,7 +74858,7 @@ pos = (483,0);
 },
 {
 name = caret_1;
-pos = (322,0);
+pos = (322.255,0);
 },
 {
 name = middle;
@@ -74565,7 +75012,7 @@ pos = (441,0);
 },
 {
 name = caret_1;
-pos = (280,0);
+pos = (260.82,0);
 },
 {
 name = middle;
@@ -74719,7 +75166,7 @@ pos = (441,0);
 },
 {
 name = caret_1;
-pos = (280,0);
+pos = (322.255,0);
 },
 {
 name = middle;
@@ -74865,13 +75312,17 @@ unicode = 64258;
 },
 {
 glyphname = s_t;
-lastChange = "2025-02-27 09:09:00 +0000";
+lastChange = "2025-02-27 15:03:33 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
 pos = (657,0);
+},
+{
+name = caret_1;
+pos = (378.34,0);
 }
 );
 background = {
@@ -74983,6 +75434,10 @@ anchors = (
 {
 name = bottom;
 pos = (657,0);
+},
+{
+name = caret_1;
+pos = (407,0);
 }
 );
 hints = (
@@ -75078,6 +75533,10 @@ anchors = (
 {
 name = bottom;
 pos = (657,0);
+},
+{
+name = caret_1;
+pos = (378.34,0);
 }
 );
 background = {
@@ -75189,6 +75648,10 @@ anchors = (
 {
 name = bottom;
 pos = (657,0);
+},
+{
+name = caret_1;
+pos = (407,0);
 }
 );
 hints = (
@@ -75285,9 +75748,43 @@ metricRight = t;
 },
 {
 glyphname = w_w_w;
-lastChange = "2025-02-26 16:18:05 +0000";
+lastChange = "2025-02-27 15:03:41 +0000";
 layers = (
 {
+anchors = (
+{
+name = bottom_1;
+pos = (369,0);
+},
+{
+name = bottom_2;
+pos = (1107,0);
+},
+{
+name = bottom_3;
+pos = (1845,0);
+},
+{
+name = caret_1;
+pos = (738,0);
+},
+{
+name = caret_2;
+pos = (1476,0);
+},
+{
+name = top_1;
+pos = (369,440);
+},
+{
+name = top_2;
+pos = (1107,440);
+},
+{
+name = top_3;
+pos = (1845,440);
+}
+);
 layerId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
 shapes = (
 {
@@ -75307,6 +75804,40 @@ ref = w;
 width = 2214;
 },
 {
+anchors = (
+{
+name = bottom_1;
+pos = (392,0);
+},
+{
+name = bottom_2;
+pos = (1177,0);
+},
+{
+name = bottom_3;
+pos = (1962,0);
+},
+{
+name = caret_1;
+pos = (784.667,0);
+},
+{
+name = caret_2;
+pos = (1569.333,0);
+},
+{
+name = top_1;
+pos = (392,440);
+},
+{
+name = top_2;
+pos = (1177,440);
+},
+{
+name = top_3;
+pos = (1962,440);
+}
+);
 layerId = m002;
 shapes = (
 {
@@ -75326,6 +75857,40 @@ ref = w;
 width = 2354;
 },
 {
+anchors = (
+{
+name = bottom_1;
+pos = (326,0);
+},
+{
+name = bottom_2;
+pos = (1064,0);
+},
+{
+name = bottom_3;
+pos = (1802,0);
+},
+{
+name = caret_1;
+pos = (738,0);
+},
+{
+name = caret_2;
+pos = (1476,0);
+},
+{
+name = top_1;
+pos = (412,440);
+},
+{
+name = top_2;
+pos = (1150,440);
+},
+{
+name = top_3;
+pos = (1888,440);
+}
+);
 layerId = m003;
 shapes = (
 {
@@ -75345,6 +75910,40 @@ ref = w;
 width = 2214;
 },
 {
+anchors = (
+{
+name = bottom_1;
+pos = (349,0);
+},
+{
+name = bottom_2;
+pos = (1134,0);
+},
+{
+name = bottom_3;
+pos = (1919,0);
+},
+{
+name = caret_1;
+pos = (784.667,0);
+},
+{
+name = caret_2;
+pos = (1569.333,0);
+},
+{
+name = top_1;
+pos = (435,440);
+},
+{
+name = top_2;
+pos = (1220,440);
+},
+{
+name = top_3;
+pos = (2005,440);
+}
+);
 layerId = m004;
 shapes = (
 {
@@ -119407,6 +120006,493 @@ metricRight = "=|";
 unicode = 10110;
 },
 {
+glyphname = ten.blackCircled;
+lastChange = "2025-02-27 12:22:52 +0000";
+layers = (
+{
+layerId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
+shapes = (
+{
+ref = _part.blackCircle;
+},
+{
+alignment = -1;
+attr = {
+reversePaths = 1;
+};
+pos = (189.91,72.6);
+ref = one.lf;
+scale = (0.78,0.78);
+},
+{
+alignment = -1;
+attr = {
+reversePaths = 1;
+};
+pos = (401.544,72.6);
+ref = zero.lf;
+scale = (0.78,0.78);
+}
+);
+width = 1011;
+},
+{
+associatedMasterId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
+layerId = "F5467FAD-1970-4982-B3D3-939C01050498";
+name = Light;
+shapes = (
+{
+ref = _part.blackCircle;
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (212,108);
+ref = one;
+scale = (0.6605,0.6605);
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (435,108);
+ref = zero;
+scale = (0.6605,0.6605);
+}
+);
+width = 1011;
+},
+{
+associatedMasterId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
+layerId = "6DD95C5A-998B-41AB-BDFB-84A73C209871";
+name = Bold;
+shapes = (
+{
+ref = _part.blackCircle;
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (182,108);
+ref = one;
+scale = (0.6605,0.6605);
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (425,108);
+ref = zero;
+scale = (0.6605,0.6605);
+}
+);
+width = 1011;
+},
+{
+associatedMasterId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
+layerId = "3ED9E848-BE83-4CAC-8EFF-D71BD2B4F667";
+name = Black;
+shapes = (
+{
+ref = _part.blackCircle;
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (182,108);
+ref = one;
+scale = (0.6605,0.6605);
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (425,108);
+ref = zero;
+scale = (0.6605,0.6605);
+}
+);
+width = 1011;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = _part.blackCircle;
+},
+{
+alignment = -1;
+attr = {
+reversePaths = 1;
+};
+pos = (169.012,72.6);
+ref = one.lf;
+scale = (0.78,0.78);
+},
+{
+alignment = -1;
+attr = {
+reversePaths = 1;
+};
+pos = (418.821,72.6);
+ref = zero.lf;
+scale = (0.78,0.78);
+}
+);
+width = 1011;
+},
+{
+associatedMasterId = m002;
+layerId = "BBEE5258-0A1C-43A2-BD34-21774FF4DE9F";
+name = Light;
+shapes = (
+{
+ref = _part.blackCircle;
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (212,108);
+ref = one;
+scale = (0.6605,0.6605);
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (435,108);
+ref = zero;
+scale = (0.6605,0.6605);
+}
+);
+width = 1011;
+},
+{
+associatedMasterId = m002;
+layerId = "83620A26-43B8-4304-BDFF-BF9D4264E441";
+name = Bold;
+shapes = (
+{
+ref = _part.blackCircle;
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (182,108);
+ref = one;
+scale = (0.6605,0.6605);
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (425,108);
+ref = zero;
+scale = (0.6605,0.6605);
+}
+);
+width = 1011;
+},
+{
+associatedMasterId = m002;
+layerId = "1186A889-1399-46AF-80B7-8ACB832348E2";
+name = Black;
+shapes = (
+{
+ref = _part.blackCircle;
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (182,108);
+ref = one;
+scale = (0.6605,0.6605);
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (425,108);
+ref = zero;
+scale = (0.6605,0.6605);
+}
+);
+width = 1011;
+},
+{
+layerId = m003;
+shapes = (
+{
+ref = _part.blackCircle;
+},
+{
+alignment = -1;
+attr = {
+reversePaths = 1;
+};
+pos = (189.91,72.6);
+ref = one.lf;
+scale = (0.78,0.78);
+},
+{
+alignment = -1;
+attr = {
+reversePaths = 1;
+};
+pos = (401.544,72.6);
+ref = zero.lf;
+scale = (0.78,0.78);
+}
+);
+width = 1011;
+},
+{
+associatedMasterId = m003;
+layerId = "C3ECBB09-2005-4DAA-A360-431C0866C022";
+name = Light;
+shapes = (
+{
+ref = _part.blackCircle;
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (212,108);
+ref = one;
+scale = (0.6605,0.6605);
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (435,108);
+ref = zero;
+scale = (0.6605,0.6605);
+}
+);
+width = 1011;
+},
+{
+associatedMasterId = m003;
+layerId = "4894B815-DBA8-4932-8C35-5B359FC60297";
+name = Bold;
+shapes = (
+{
+ref = _part.blackCircle;
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (182,108);
+ref = one;
+scale = (0.6605,0.6605);
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (425,108);
+ref = zero;
+scale = (0.6605,0.6605);
+}
+);
+width = 1011;
+},
+{
+associatedMasterId = m003;
+layerId = "1E722C53-B573-4E1C-A25F-0ABCDF27D869";
+name = Black;
+shapes = (
+{
+ref = _part.blackCircle;
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (182,108);
+ref = one;
+scale = (0.6605,0.6605);
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (425,108);
+ref = zero;
+scale = (0.6605,0.6605);
+}
+);
+width = 1011;
+},
+{
+layerId = m004;
+shapes = (
+{
+ref = _part.blackCircle;
+},
+{
+alignment = -1;
+attr = {
+reversePaths = 1;
+};
+pos = (169.012,72.6);
+ref = one.lf;
+scale = (0.78,0.78);
+},
+{
+alignment = -1;
+attr = {
+reversePaths = 1;
+};
+pos = (418.821,72.6);
+ref = zero.lf;
+scale = (0.78,0.78);
+}
+);
+width = 1011;
+},
+{
+associatedMasterId = m004;
+layerId = "31471A8B-98C3-4493-AC4F-2884419AFFCA";
+name = Light;
+shapes = (
+{
+ref = _part.blackCircle;
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (212,108);
+ref = one;
+scale = (0.6605,0.6605);
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (435,108);
+ref = zero;
+scale = (0.6605,0.6605);
+}
+);
+width = 1011;
+},
+{
+associatedMasterId = m004;
+layerId = "D8CF90F6-BB42-4C28-A265-7AF071970CB6";
+name = Bold;
+shapes = (
+{
+ref = _part.blackCircle;
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (182,108);
+ref = one;
+scale = (0.6605,0.6605);
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (425,108);
+ref = zero;
+scale = (0.6605,0.6605);
+}
+);
+width = 1011;
+},
+{
+associatedMasterId = m004;
+layerId = "428AFE37-47ED-4540-8D87-7FC5348427C9";
+name = Black;
+shapes = (
+{
+ref = _part.blackCircle;
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (182,108);
+ref = one;
+scale = (0.6605,0.6605);
+},
+{
+alignment = -1;
+attr = {
+identifier = ID0x7f840cbafef0;
+reversePaths = "1";
+};
+pos = (425,108);
+ref = zero;
+scale = (0.6605,0.6605);
+}
+);
+width = 1011;
+}
+);
+unicode = 10111;
+},
+{
 glyphname = zero.circled;
 lastChange = "2025-02-27 09:13:13 +0000";
 layers = (
@@ -126764,493 +127850,6 @@ width = 1011;
 }
 );
 unicode = 10121;
-},
-{
-glyphname = ten.blackCircled;
-lastChange = "2025-02-27 12:22:52 +0000";
-layers = (
-{
-layerId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
-shapes = (
-{
-ref = _part.blackCircle;
-},
-{
-alignment = -1;
-attr = {
-reversePaths = 1;
-};
-pos = (189.91,72.6);
-ref = one.lf;
-scale = (0.78,0.78);
-},
-{
-alignment = -1;
-attr = {
-reversePaths = 1;
-};
-pos = (401.544,72.6);
-ref = zero.lf;
-scale = (0.78,0.78);
-}
-);
-width = 1011;
-},
-{
-associatedMasterId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
-layerId = "F5467FAD-1970-4982-B3D3-939C01050498";
-name = Light;
-shapes = (
-{
-ref = _part.blackCircle;
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (212,108);
-ref = one;
-scale = (0.6605,0.6605);
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (435,108);
-ref = zero;
-scale = (0.6605,0.6605);
-}
-);
-width = 1011;
-},
-{
-associatedMasterId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
-layerId = "6DD95C5A-998B-41AB-BDFB-84A73C209871";
-name = Bold;
-shapes = (
-{
-ref = _part.blackCircle;
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (182,108);
-ref = one;
-scale = (0.6605,0.6605);
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (425,108);
-ref = zero;
-scale = (0.6605,0.6605);
-}
-);
-width = 1011;
-},
-{
-associatedMasterId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
-layerId = "3ED9E848-BE83-4CAC-8EFF-D71BD2B4F667";
-name = Black;
-shapes = (
-{
-ref = _part.blackCircle;
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (182,108);
-ref = one;
-scale = (0.6605,0.6605);
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (425,108);
-ref = zero;
-scale = (0.6605,0.6605);
-}
-);
-width = 1011;
-},
-{
-layerId = m002;
-shapes = (
-{
-ref = _part.blackCircle;
-},
-{
-alignment = -1;
-attr = {
-reversePaths = 1;
-};
-pos = (169.012,72.6);
-ref = one.lf;
-scale = (0.78,0.78);
-},
-{
-alignment = -1;
-attr = {
-reversePaths = 1;
-};
-pos = (418.821,72.6);
-ref = zero.lf;
-scale = (0.78,0.78);
-}
-);
-width = 1011;
-},
-{
-associatedMasterId = m002;
-layerId = "BBEE5258-0A1C-43A2-BD34-21774FF4DE9F";
-name = Light;
-shapes = (
-{
-ref = _part.blackCircle;
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (212,108);
-ref = one;
-scale = (0.6605,0.6605);
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (435,108);
-ref = zero;
-scale = (0.6605,0.6605);
-}
-);
-width = 1011;
-},
-{
-associatedMasterId = m002;
-layerId = "83620A26-43B8-4304-BDFF-BF9D4264E441";
-name = Bold;
-shapes = (
-{
-ref = _part.blackCircle;
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (182,108);
-ref = one;
-scale = (0.6605,0.6605);
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (425,108);
-ref = zero;
-scale = (0.6605,0.6605);
-}
-);
-width = 1011;
-},
-{
-associatedMasterId = m002;
-layerId = "1186A889-1399-46AF-80B7-8ACB832348E2";
-name = Black;
-shapes = (
-{
-ref = _part.blackCircle;
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (182,108);
-ref = one;
-scale = (0.6605,0.6605);
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (425,108);
-ref = zero;
-scale = (0.6605,0.6605);
-}
-);
-width = 1011;
-},
-{
-layerId = m003;
-shapes = (
-{
-ref = _part.blackCircle;
-},
-{
-alignment = -1;
-attr = {
-reversePaths = 1;
-};
-pos = (189.91,72.6);
-ref = one.lf;
-scale = (0.78,0.78);
-},
-{
-alignment = -1;
-attr = {
-reversePaths = 1;
-};
-pos = (401.544,72.6);
-ref = zero.lf;
-scale = (0.78,0.78);
-}
-);
-width = 1011;
-},
-{
-associatedMasterId = m003;
-layerId = "C3ECBB09-2005-4DAA-A360-431C0866C022";
-name = Light;
-shapes = (
-{
-ref = _part.blackCircle;
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (212,108);
-ref = one;
-scale = (0.6605,0.6605);
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (435,108);
-ref = zero;
-scale = (0.6605,0.6605);
-}
-);
-width = 1011;
-},
-{
-associatedMasterId = m003;
-layerId = "4894B815-DBA8-4932-8C35-5B359FC60297";
-name = Bold;
-shapes = (
-{
-ref = _part.blackCircle;
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (182,108);
-ref = one;
-scale = (0.6605,0.6605);
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (425,108);
-ref = zero;
-scale = (0.6605,0.6605);
-}
-);
-width = 1011;
-},
-{
-associatedMasterId = m003;
-layerId = "1E722C53-B573-4E1C-A25F-0ABCDF27D869";
-name = Black;
-shapes = (
-{
-ref = _part.blackCircle;
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (182,108);
-ref = one;
-scale = (0.6605,0.6605);
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (425,108);
-ref = zero;
-scale = (0.6605,0.6605);
-}
-);
-width = 1011;
-},
-{
-layerId = m004;
-shapes = (
-{
-ref = _part.blackCircle;
-},
-{
-alignment = -1;
-attr = {
-reversePaths = 1;
-};
-pos = (169.012,72.6);
-ref = one.lf;
-scale = (0.78,0.78);
-},
-{
-alignment = -1;
-attr = {
-reversePaths = 1;
-};
-pos = (418.821,72.6);
-ref = zero.lf;
-scale = (0.78,0.78);
-}
-);
-width = 1011;
-},
-{
-associatedMasterId = m004;
-layerId = "31471A8B-98C3-4493-AC4F-2884419AFFCA";
-name = Light;
-shapes = (
-{
-ref = _part.blackCircle;
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (212,108);
-ref = one;
-scale = (0.6605,0.6605);
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (435,108);
-ref = zero;
-scale = (0.6605,0.6605);
-}
-);
-width = 1011;
-},
-{
-associatedMasterId = m004;
-layerId = "D8CF90F6-BB42-4C28-A265-7AF071970CB6";
-name = Bold;
-shapes = (
-{
-ref = _part.blackCircle;
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (182,108);
-ref = one;
-scale = (0.6605,0.6605);
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (425,108);
-ref = zero;
-scale = (0.6605,0.6605);
-}
-);
-width = 1011;
-},
-{
-associatedMasterId = m004;
-layerId = "428AFE37-47ED-4540-8D87-7FC5348427C9";
-name = Black;
-shapes = (
-{
-ref = _part.blackCircle;
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (182,108);
-ref = one;
-scale = (0.6605,0.6605);
-},
-{
-alignment = -1;
-attr = {
-identifier = ID0x7f840cbafef0;
-reversePaths = "1";
-};
-pos = (425,108);
-ref = zero;
-scale = (0.6605,0.6605);
-}
-);
-width = 1011;
-}
-);
-unicode = 10111;
 },
 {
 glyphname = zero.lf.zero;
@@ -141390,29 +141989,6 @@ note = hyphen;
 unicode = 45;
 },
 {
-glyphname = softhyphen;
-lastChange = "2025-02-26 16:18:05 +0000";
-layers = (
-{
-layerId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
-width = 0;
-},
-{
-layerId = m002;
-width = 0;
-},
-{
-layerId = m003;
-width = 0;
-},
-{
-layerId = m004;
-width = 0;
-}
-);
-unicode = 173;
-},
-{
 glyphname = endash;
 kernLeft = hyphen;
 kernRight = hyphen;
@@ -142348,382 +142924,6 @@ width = 335.788;
 {
 associatedMasterId = m004;
 layerId = "ED36A7C7-3DA8-484E-812D-23B18CDCBBD8";
-name = "Black Italic";
-shapes = (
-{
-pos = (13.218,68);
-ref = hyphen;
-}
-);
-width = 450;
-}
-);
-},
-{
-glyphname = softhyphen.case;
-kernLeft = hyphen;
-kernRight = hyphen;
-lastChange = "2025-02-26 16:29:44 +0000";
-layers = (
-{
-associatedMasterId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
-layerId = "6699CAAD-414D-4228-B399-05A01326B616";
-name = Regular;
-shapes = (
-{
-pos = (0,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
-layerId = "A33A2EC3-7754-4E39-AA89-9D32D92B9049";
-name = Regular;
-shapes = (
-{
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-layerId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
-shapes = (
-{
-pos = (0,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
-layerId = "2FDAC9EA-BE15-4C34-BF98-0BFE466A3934";
-name = Black;
-shapes = (
-{
-pos = (0,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
-layerId = "E22FA3DC-AA78-48BE-995A-323D45EB654B";
-name = "Extra Light Italic";
-shapes = (
-{
-pos = (0,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
-layerId = "CFC4624E-545A-4D28-9C29-40567FB4556F";
-name = "Regular Italic";
-shapes = (
-{
-pos = (0,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
-layerId = "EADE4892-104A-4274-A16F-D24BE6801DBE";
-name = "Regular Italic";
-shapes = (
-{
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
-layerId = "62494363-C511-443C-8B75-FFA0080F2357";
-name = "Black Italic";
-shapes = (
-{
-pos = (0,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m002;
-layerId = "9838BCDF-7971-4E40-873A-80E1950D00F8";
-name = Regular;
-shapes = (
-{
-pos = (0,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m002;
-layerId = "A88003C4-5ED8-4517-8B55-D725C056C27F";
-name = Regular;
-shapes = (
-{
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-layerId = m002;
-shapes = (
-{
-pos = (0,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m002;
-layerId = "4BA806C8-3DFE-48EB-A3ED-B6D71A1CE8BF";
-name = Black;
-shapes = (
-{
-pos = (0,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m002;
-layerId = "589B758D-1798-483F-BC12-1B9DE8980DA2";
-name = "Extra Light Italic";
-shapes = (
-{
-pos = (0,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m002;
-layerId = "6A3B4EB2-0B30-46F6-A775-03EACDDBB5DA";
-name = "Regular Italic";
-shapes = (
-{
-pos = (0,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m002;
-layerId = "3D6BFA2C-2F31-4C02-A274-BDE815648905";
-name = "Regular Italic";
-shapes = (
-{
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m002;
-layerId = "0B91F7C4-074D-4FBB-A276-A82232CAB615";
-name = "Black Italic";
-shapes = (
-{
-pos = (0,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m003;
-layerId = "5A966090-64A0-4F5F-9FC5-32D804D68786";
-name = Regular;
-shapes = (
-{
-pos = (13.218,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m003;
-layerId = "581ADE1E-F405-4500-8FD8-2EB221CA1144";
-name = Regular;
-shapes = (
-{
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-layerId = m003;
-shapes = (
-{
-pos = (13.218,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m003;
-layerId = "2DE24B5B-1DB5-45E0-B81C-EA03100253BC";
-name = Black;
-shapes = (
-{
-pos = (13.218,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m003;
-layerId = "F631A7BF-6361-4CF6-B448-FFF589BAC502";
-name = "Extra Light Italic";
-shapes = (
-{
-pos = (13.218,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m003;
-layerId = "CF62200A-21BE-49D5-BF88-9C60521474BA";
-name = "Regular Italic";
-shapes = (
-{
-pos = (13.218,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m003;
-layerId = "271EFE7D-1C40-480B-B6CF-52019D12FDA6";
-name = "Regular Italic";
-shapes = (
-{
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m003;
-layerId = "E87DEDE8-E3D5-4DC2-B39D-DFF9E8780D6E";
-name = "Black Italic";
-shapes = (
-{
-pos = (13.218,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m004;
-layerId = "29402349-886E-45FD-B10D-F125E72A33CE";
-name = Regular;
-shapes = (
-{
-pos = (13.218,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m004;
-layerId = "EA0C8A40-4AA7-43A3-A59D-DD79E62F01D1";
-name = Regular;
-shapes = (
-{
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-layerId = m004;
-shapes = (
-{
-pos = (13.218,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m004;
-layerId = "F6FD849C-5726-4BEB-A79B-3AF15D9E90A5";
-name = Black;
-shapes = (
-{
-pos = (13.218,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m004;
-layerId = "6EEC9A0C-C1D2-4EE1-8F7A-03673A9C1435";
-name = "Extra Light Italic";
-shapes = (
-{
-pos = (13.218,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m004;
-layerId = "3225A28D-0BD6-496D-9EDB-41F18A003EBA";
-name = "Regular Italic";
-shapes = (
-{
-pos = (13.218,68);
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m004;
-layerId = "5DA7D816-12A1-473F-9DA4-98DBD6C1D9BD";
-name = "Regular Italic";
-shapes = (
-{
-ref = hyphen;
-}
-);
-width = 450;
-},
-{
-associatedMasterId = m004;
-layerId = "6FC17CE1-A8D0-4D36-9F65-D52DD51D93A3";
 name = "Black Italic";
 shapes = (
 {
@@ -211201,7 +211401,7 @@ unicode = 8722;
 },
 {
 glyphname = multiply;
-lastChange = "2025-02-27 10:17:49 +0000";
+lastChange = "2025-02-27 15:18:00 +0000";
 layers = (
 {
 hints = (
@@ -211223,71 +211423,71 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(74.714,424.961,ls),
-(70.719,428.966,o),
-(68.714,428.961,o),
-(64.714,428.961,cs),
-(62.714,428.961,o),
-(59.862,427.807,o),
-(55.714,423.961,cs),
-(41.998,411.245,ls),
-(39.354,408.794,o),
-(37.998,405.407,o),
-(37.998,402.245,c),
-(37.998,399.083,o),
-(39.445,394.791,o),
-(41.998,392.245,cs),
-(424.998,10.245,ls),
-(429.003,6.25,o),
-(430.998,4.245,o),
-(434.998,4.245,cs),
-(436.998,4.245,o),
-(439.85,6.399,o),
-(443.998,10.245,cs),
-(457.714,22.961,ls),
-(460.358,25.412,o),
-(461.714,28.799,o),
-(461.714,31.961,c),
-(461.714,35.123,o),
-(459.711,38.958,o),
-(457.714,40.961,cs)
+(88.714,424.961,ls),
+(84.719,428.966,o),
+(82.714,428.961,o),
+(78.714,428.961,cs),
+(76.714,428.961,o),
+(73.862,427.807,o),
+(69.714,423.961,cs),
+(55.998,411.245,ls),
+(53.354,408.794,o),
+(51.998,405.407,o),
+(51.998,402.245,c),
+(51.998,399.083,o),
+(53.445,394.791,o),
+(55.998,392.245,cs),
+(438.998,10.245,ls),
+(443.003,6.25,o),
+(444.998,4.245,o),
+(448.998,4.245,cs),
+(450.998,4.245,o),
+(453.85,6.399,o),
+(457.998,10.245,cs),
+(471.714,22.961,ls),
+(474.358,25.412,o),
+(475.714,28.799,o),
+(475.714,31.961,c),
+(475.714,35.123,o),
+(473.711,38.958,o),
+(471.714,40.961,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(41.998,41.961,l),
-(38.998,38.961,o),
-(37.998,35.961,o),
-(37.998,32.961,cs),
-(37.998,29.961,o),
-(39.354,25.412,o),
-(41.998,22.961,cs),
-(55.714,10.245,ls),
-(58.825,7.361,o),
-(62.714,5.245,o),
-(64.714,5.245,cs),
-(68.714,5.245,o),
-(71.178,6.709,o),
-(74.714,10.245,cs),
-(456.714,392.245,ls),
-(460.25,395.781,o),
-(461.714,399.245,o),
-(461.714,402.245,cs),
-(461.714,405.245,o),
-(459.598,408.134,o),
-(456.714,411.245,cs),
-(443.998,424.961,ls),
-(441.547,427.605,o),
-(436.998,428.961,o),
-(434.998,428.961,cs),
-(430.998,428.961,o),
-(427.998,427.961,o),
-(424.998,424.961,c)
+(55.998,41.961,l),
+(52.998,38.961,o),
+(51.998,35.961,o),
+(51.998,32.961,cs),
+(51.998,29.961,o),
+(53.354,25.412,o),
+(55.998,22.961,cs),
+(69.714,10.245,ls),
+(72.825,7.361,o),
+(76.714,5.245,o),
+(78.714,5.245,cs),
+(82.714,5.245,o),
+(85.178,6.709,o),
+(88.714,10.245,cs),
+(470.714,392.245,ls),
+(474.25,395.781,o),
+(475.714,399.245,o),
+(475.714,402.245,cs),
+(475.714,405.245,o),
+(473.598,408.134,o),
+(470.714,411.245,cs),
+(457.998,424.961,ls),
+(455.547,427.605,o),
+(450.998,428.961,o),
+(448.998,428.961,cs),
+(444.998,428.961,o),
+(441.998,427.961,o),
+(438.998,424.961,c)
 );
 }
 );
-width = 499.71;
+width = 528;
 },
 {
 hints = (
@@ -211395,71 +211595,71 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(115.318,424.961,ls),
-(112.131,428.989,o),
-(110.096,428.961,o),
-(106.096,428.961,cs),
-(104.096,428.961,o),
-(101.019,427.807,o),
-(96.124,423.961,cs),
-(84.831,415.09,ls),
-(81.71,412.639,o),
-(79.696,409.252,o),
-(79.081,406.09,c),
-(78.467,402.928,o),
-(79.112,398.662,o),
-(81.137,396.09,cs),
-(384.989,10.245,ls),
-(388.167,6.21,o),
-(389.823,4.245,o),
-(393.823,4.245,cs),
-(395.823,4.245,o),
-(399.132,6.351,o),
-(403.989,10.245,cs),
-(417.259,20.883,ls),
-(420.355,23.365,o),
-(422.394,26.721,o),
-(423.008,29.883,c),
-(423.623,33.045,o),
-(422.351,36.869,o),
-(420.758,38.883,cs)
+(132.318,424.961,ls),
+(129.131,428.989,o),
+(127.096,428.961,o),
+(123.096,428.961,cs),
+(121.096,428.961,o),
+(118.019,427.807,o),
+(113.124,423.961,cs),
+(101.831,415.09,ls),
+(98.71,412.639,o),
+(96.696,409.252,o),
+(96.081,406.09,c),
+(95.467,402.928,o),
+(96.112,398.662,o),
+(98.137,396.09,cs),
+(401.989,10.245,ls),
+(405.167,6.21,o),
+(406.823,4.245,o),
+(410.823,4.245,cs),
+(412.823,4.245,o),
+(416.132,6.351,o),
+(420.989,10.245,cs),
+(434.259,20.883,ls),
+(437.355,23.365,o),
+(439.394,26.721,o),
+(440.008,29.883,c),
+(440.623,33.045,o),
+(439.351,36.869,o),
+(437.758,38.883,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(5.307,45.208,l),
-(1.724,42.208,o),
-(0.141,39.208,o),
-(-0.442,36.208,cs),
-(-1.025,33.208,o),
-(-0.551,28.661,o),
-(1.614,26.208,cs),
-(15.705,10.245,ls),
-(18.253,7.359,o),
-(21.734,5.245,o),
-(23.734,5.245,cs),
-(27.734,5.245,o),
-(30.462,6.733,o),
-(34.705,10.245,cs),
-(492.977,389.558,ls),
-(497.22,393.071,o),
-(499.338,396.558,o),
-(499.921,399.558,cs),
-(500.504,402.558,o),
-(498.956,405.452,o),
-(496.67,408.558,cs),
-(484.602,424.961,ls),
-(482.66,427.601,o),
-(478.38,428.961,o),
-(476.38,428.961,cs),
-(472.38,428.961,o),
-(469.185,427.961,o),
-(465.602,424.961,c)
+(22.307,45.208,l),
+(18.724,42.208,o),
+(17.141,39.208,o),
+(16.558,36.208,cs),
+(15.975,33.208,o),
+(16.449,28.661,o),
+(18.614,26.208,cs),
+(32.705,10.245,ls),
+(35.253,7.359,o),
+(38.734,5.245,o),
+(40.734,5.245,cs),
+(44.734,5.245,o),
+(47.462,6.733,o),
+(51.705,10.245,cs),
+(509.977,389.558,ls),
+(514.22,393.071,o),
+(516.338,396.558,o),
+(516.921,399.558,cs),
+(517.504,402.558,o),
+(515.956,405.452,o),
+(513.67,408.558,cs),
+(501.602,424.961,ls),
+(499.66,427.601,o),
+(495.38,428.961,o),
+(493.38,428.961,cs),
+(489.38,428.961,o),
+(486.185,427.961,o),
+(482.602,424.961,c)
 );
 }
 );
-width = 499.71;
+width = 528;
 },
 {
 hints = (
@@ -219783,7 +219983,7 @@ width = 528;
 glyphname = multiply.case;
 kernLeft = multiply;
 kernRight = multiply;
-lastChange = "2025-02-27 09:00:32 +0000";
+lastChange = "2025-02-27 15:18:03 +0000";
 layers = (
 {
 associatedMasterId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";
@@ -219832,7 +220032,7 @@ pos = (0,49);
 ref = multiply;
 }
 );
-width = 499.71;
+width = 528;
 },
 {
 associatedMasterId = "6AD408C6-91F3-4F0B-A103-73D10F5280D9";

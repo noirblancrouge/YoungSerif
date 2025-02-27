@@ -3,4 +3,12 @@ sources:
 axisOrder:
   - wght
   - ital
-familyName: Young Serif
+familyName: "Young Serif"
+cleanUp: true
+buildVariable: true
+buildStatic: true
+buildTTF: true
+buildOTF: true
+buildSmallCap: false
+autohintTTF: true
+includeSourceFixes: true
