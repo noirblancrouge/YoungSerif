@@ -14,7 +14,7 @@
 
 ![Cover](https://raw.githubusercontent.com/noirblancrouge/YoungSerif/master/documentation/images/young-serif.jpg)
 
-Young Serif is a heavy weight old style serif typeface, taking inspiration from Plantin Infant or ITC Italian Old Style. 
+Young Serif is an old style serif typeface, taking inspiration from Plantin Infant or ITC Italian Old Style. 
 The lowercase b and f feature rounded curves, adding a tender and generous quality to this font.
 
 ![Specimen](https://raw.githubusercontent.com/noirblancrouge/YoungSerif/master/documentation/images/young-serif-charset.jpg)
@@ -23,6 +23,9 @@ The lowercase b and f feature rounded curves, adding a tender and generous quali
 
 When you make modifications, be sure to add a description of your changes,
 following the format of the other entries, to the start of this section.
+
+27 Feb 2025 (Bastien Sozeau)
+Added a light weight master and two other italic masters for each weight allowing the generation of a variable version. Added small caps to the character set
 
 14 Feb 2025 (Bastien Sozeau)
 - Add glyphs according to the standards of the NBR glyphset

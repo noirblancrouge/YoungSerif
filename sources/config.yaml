@@ -1,3 +1,6 @@
 sources:
   - Young-Serif.glyphs
+axisOrder:
+  - wght
+  - ital
 familyName: Young Serif
