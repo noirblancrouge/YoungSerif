@@ -24,6 +24,9 @@ The lowercase b and f feature rounded curves, adding a tender and generous quali
 When you make modifications, be sure to add a description of your changes,
 following the format of the other entries, to the start of this section.
 
+05 Mai 2026 (Bastien Sozeau)
+- Update Italics, add real italics and a stylistic set to keep obliques for certain characters
+
 27 Feb 2025 (Bastien Sozeau)
 - Added a light weight master and two other italic masters for each weight allowing the generation of a variable version. Added small caps to the character set
 
