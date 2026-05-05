@@ -1537,7 +1537,9 @@ sub ytilde by ytilde.italic;
 tag = rlig;
 },
 {
-code = "sub s.italic by s;
+code = "#ifdef VARIABLE
+condition 50 < ital;
+sub s.italic by s;
 sub sacute.italic by sacute;
 sub sacutedotaccent.italic by sacutedotaccent;
 sub scaron.italic by scaron;
@@ -1558,7 +1560,9 @@ sub ydotbelow.italic by ydotbelow;
 sub ygrave.italic by ygrave;
 sub yhookabove.italic by yhookabove;
 sub ymacron.italic by ymacron;
-sub ytilde.italic by ytilde;";
+sub ytilde.italic by ytilde;
+#endif
+";
 labels = (
 {
 language = dflt;
