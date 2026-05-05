@@ -4,8 +4,8 @@ axisOrder:
   - wght
   - ital
 familyName: "Young Serif"
-cleanUp: false
-buildVariable: true
+cleanUp: true
+buildVariable: false
 buildStatic: true
 buildTTF: true
 buildOTF: true
