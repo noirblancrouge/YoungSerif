@@ -280366,6 +280366,6 @@ name = Hstem;
 }
 );
 unitsPerEm = 1000;
-versionMajor = 5;
-versionMinor = 2;
+versionMajor = 6;
+versionMinor = 1;
 }
