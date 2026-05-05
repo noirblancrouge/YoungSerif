@@ -45607,7 +45607,7 @@ pos = (-33,0);
 ref = brevecomb;
 }
 );
-width = 459;
+width = 472;
 },
 {
 layerId = m003;
@@ -45729,7 +45729,7 @@ pos = (-35,0);
 ref = circumflexcomb;
 }
 );
-width = 459;
+width = 472;
 },
 {
 layerId = m003;
@@ -45792,7 +45792,7 @@ pos = (439,440);
 ref = commaaccentcomb;
 }
 );
-width = 459;
+width = 472;
 },
 {
 layerId = m003;
@@ -45856,7 +45856,7 @@ pos = (-25,0);
 ref = dotaccentcomb;
 }
 );
-width = 459;
+width = 472;
 },
 {
 layerId = m003;
@@ -45918,7 +45918,7 @@ pos = (-29,0);
 ref = macroncomb;
 }
 );
-width = 459;
+width = 472;
 },
 {
 layerId = m003;
@@ -49076,11 +49076,11 @@ shapes = (
 ref = jdotless;
 },
 {
-pos = (-101,0);
+pos = (-88.76,0);
 ref = dotaccentcomb;
 }
 );
-width = 267;
+width = 279.24;
 }
 );
 note = j;
@@ -51574,7 +51574,7 @@ pos = (296.2,0);
 ref = j;
 }
 );
-width = 563.2;
+width = 575.44;
 }
 );
 unicode = 457;
@@ -54161,7 +54161,7 @@ pos = (572.6,0);
 ref = j;
 }
 );
-width = 839.6;
+width = 851.84;
 }
 );
 unicode = 460;
@@ -80231,11 +80231,11 @@ ref = idotless.italic;
 },
 {
 alignment = 1;
-pos = (-14.76,0);
+pos = (-22.76,0);
 ref = ogonekcomb;
 }
 );
-width = 345.94;
+width = 357.94;
 }
 );
 },
@@ -83240,7 +83240,7 @@ pos = (344.7,0);
 ref = j;
 }
 );
-width = 611.7;
+width = 623.94;
 }
 );
 },
@@ -85617,7 +85617,7 @@ pos = (617.22,0);
 ref = j;
 }
 );
-width = 884.22;
+width = 896.46;
 }
 );
 },
@@ -122186,7 +122186,7 @@ pos = (615,0);
 ref = j;
 }
 );
-width = 882;
+width = 894.24;
 }
 );
 },
@@ -124761,7 +124761,7 @@ pos = (697.2,0);
 ref = j;
 }
 );
-width = 964.2;
+width = 976.44;
 }
 );
 },
@@ -273891,22 +273891,160 @@ value = 1;
 name = "Rename Glyphs";
 value = (
 "a.italic=a",
+"aacute.italic=aacute",
+"abreve.italic=abreve",
+"abreveacute.italic=abreveacute",
+"abrevedotbelow.italic=abrevedotbelow",
+"abrevegrave.italic=abrevegrave",
+"abrevehookabove.italic=abrevehookabove",
+"abrevetilde.italic=abrevetilde",
+"acaron.italic=acaron",
+"acircumflex.italic=acircumflex",
+"acircumflexacute.italic=acircumflexacute",
+"acircumflexdotbelow.italic=acircumflexdotbelow",
+"acircumflexgrave.italic=acircumflexgrave",
+"acircumflexhookabove.italic=acircumflexhookabove",
+"acircumflextilde.italic=acircumflextilde",
+"adblgrave.italic=adblgrave",
+"adieresis.italic=adieresis",
+"adotbelow.italic=adotbelow",
+"agrave.italic=agrave",
+"ahookabove.italic=ahookabove",
+"ainvertedbreve.italic=ainvertedbreve",
+"amacron.italic=amacron",
+"aogonek.italic=aogonek",
+"aring.italic=aring",
+"aringacute.italic=aringacute",
+"atilde.italic=atilde",
+"ae.italic=ae",
+"aeacute.italic=aeacute",
 "d.italic=d",
+"dcaron.italic=dcaron",
+"dcroat.italic=dcroat",
+"ddotbelow.italic=ddotbelow",
+"dmacronbelow.italic=dmacronbelow",
+"dzcaron.italic=dzcaron",
 "f.italic=f",
 "h.italic=h",
-"idotless.italic=idotless",
+"hbar.italic=hbar",
+"hbrevebelow.italic=hbrevebelow",
+"hcircumflex.italic=hcircumflex",
+"hdotbelow.italic=hdotbelow",
+"hmacronbelow.italic=hmacronbelow",
 "i.italic=i",
+"idotless.italic=idotless",
+"idotless_dotbelowcomb.italic=idotless_dotbelowcomb",
+"idotless_ogonekcomb.italic=idotless_ogonekcomb",
+"idotless_tildebelowcomb.italic=idotless_tildebelowcomb",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icaron.italic=icaron",
+"icircumflex.italic=icircumflex",
+"idblgrave.italic=idblgrave",
+"idieresis.italic=idieresis",
+"idieresisacute.italic=idieresisacute",
+"idotaccent.italic=idotaccent",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ihookabove.italic=ihookabove",
+"iinvertedbreve.italic=iinvertedbreve",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"itilde.italic=itilde",
+"itildebelow.italic=itildebelow",
+"ij.italic=ij",
 "k.italic=k",
+"kcommaaccent.italic=kcommaaccent",
+"kmacronbelow.italic=kmacronbelow",
 "l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"ldotbelow.italic=ldotbelow",
+"ldotbelowmacron.italic=ldotbelowmacron",
+"lj.italic=lj",
+"lmacronbelow.italic=lmacronbelow",
+"lslash.italic=lslash",
 "m.italic=m",
+"mdotaccent.italic=mdotaccent",
+"mdotbelow.italic=mdotbelow",
 "n.italic=n",
+"nacute.italic=nacute",
+"napostrophe.italic=napostrophe",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"ndotaccent.italic=ndotaccent",
+"ndotbelow.italic=ndotbelow",
+"nhookleft.italic=nhookleft",
+"nj.italic=nj",
+"nmacronbelow.italic=nmacronbelow",
+"ntilde.italic=ntilde",
 "r.italic=r",
+"racute.italic=racute",
+"rcaron.italic=rcaron",
+"rcommaaccent.italic=rcommaaccent",
+"rdblgrave.italic=rdblgrave",
+"rdotbelow.italic=rdotbelow",
+"rdotbelowmacron.italic=rdotbelowmacron",
+"rinvertedbreve.italic=rinvertedbreve",
+"rmacronbelow.italic=rmacronbelow",
 "s.italic=s",
+"sacute.italic=sacute",
+"sacutedotaccent.italic=sacutedotaccent",
+"scaron.italic=scaron",
+"scarondotaccent.italic=scarondotaccent",
+"scedilla.italic=scedilla",
+"scircumflex.italic=scircumflex",
+"scommaaccent.italic=scommaaccent",
+"sdotaccent.italic=sdotaccent",
+"sdotbelow.italic=sdotbelow",
+"sdotbelowdotaccent.italic=sdotbelowdotaccent",
 "u.italic=u",
+"uacute.italic=uacute",
+"ubreve.italic=ubreve",
+"ucaron.italic=ucaron",
+"ucircumflex.italic=ucircumflex",
+"udblgrave.italic=udblgrave",
+"udieresis.italic=udieresis",
+"udieresisacute.italic=udieresisacute",
+"udieresiscaron.italic=udieresiscaron",
+"udieresisgrave.italic=udieresisgrave",
+"udieresismacron.italic=udieresismacron",
+"udotbelow.italic=udotbelow",
+"ugrave.italic=ugrave",
+"uhookabove.italic=uhookabove",
+"uhorn.italic=uhorn",
+"uhornacute.italic=uhornacute",
+"uhorndotbelow.italic=uhorndotbelow",
+"uhorngrave.italic=uhorngrave",
+"uhornhookabove.italic=uhornhookabove",
+"uhorntilde.italic=uhorntilde",
+"uhungarumlaut.italic=uhungarumlaut",
+"uinvertedbreve.italic=uinvertedbreve",
+"umacron.italic=umacron",
+"umacrondieresis.italic=umacrondieresis",
+"uogonek.italic=uogonek",
+"uring.italic=uring",
+"utilde.italic=utilde",
+"utildeacute.italic=utildeacute",
 "v.italic=v",
 "w.italic=w",
+"wacute.italic=wacute",
+"wcircumflex.italic=wcircumflex",
+"wdieresis.italic=wdieresis",
+"wgrave.italic=wgrave",
 "x.italic=x",
-"y.italic=y"
+"y.italic=y",
+"yacute.italic=yacute",
+"ycircumflex.italic=ycircumflex",
+"ydieresis.italic=ydieresis",
+"ydotaccent.italic=ydotaccent",
+"ydotbelow.italic=ydotbelow",
+"ygrave.italic=ygrave",
+"yhookabove.italic=yhookabove",
+"ymacron.italic=ymacron",
+"ytilde.italic=ytilde"
 );
 },
 {
@@ -273919,6 +274057,8 @@ value = (
 instanceInterpolations = {
 m003 = 1;
 };
+isItalic = 1;
+linkStyle = Light;
 name = "Light Italic";
 properties = (
 {
@@ -273955,22 +274095,160 @@ value = 1;
 name = "Rename Glyphs";
 value = (
 "a.italic=a",
+"aacute.italic=aacute",
+"abreve.italic=abreve",
+"abreveacute.italic=abreveacute",
+"abrevedotbelow.italic=abrevedotbelow",
+"abrevegrave.italic=abrevegrave",
+"abrevehookabove.italic=abrevehookabove",
+"abrevetilde.italic=abrevetilde",
+"acaron.italic=acaron",
+"acircumflex.italic=acircumflex",
+"acircumflexacute.italic=acircumflexacute",
+"acircumflexdotbelow.italic=acircumflexdotbelow",
+"acircumflexgrave.italic=acircumflexgrave",
+"acircumflexhookabove.italic=acircumflexhookabove",
+"acircumflextilde.italic=acircumflextilde",
+"adblgrave.italic=adblgrave",
+"adieresis.italic=adieresis",
+"adotbelow.italic=adotbelow",
+"agrave.italic=agrave",
+"ahookabove.italic=ahookabove",
+"ainvertedbreve.italic=ainvertedbreve",
+"amacron.italic=amacron",
+"aogonek.italic=aogonek",
+"aring.italic=aring",
+"aringacute.italic=aringacute",
+"atilde.italic=atilde",
+"ae.italic=ae",
+"aeacute.italic=aeacute",
 "d.italic=d",
+"dcaron.italic=dcaron",
+"dcroat.italic=dcroat",
+"ddotbelow.italic=ddotbelow",
+"dmacronbelow.italic=dmacronbelow",
+"dzcaron.italic=dzcaron",
 "f.italic=f",
 "h.italic=h",
-"idotless.italic=idotless",
+"hbar.italic=hbar",
+"hbrevebelow.italic=hbrevebelow",
+"hcircumflex.italic=hcircumflex",
+"hdotbelow.italic=hdotbelow",
+"hmacronbelow.italic=hmacronbelow",
 "i.italic=i",
+"idotless.italic=idotless",
+"idotless_dotbelowcomb.italic=idotless_dotbelowcomb",
+"idotless_ogonekcomb.italic=idotless_ogonekcomb",
+"idotless_tildebelowcomb.italic=idotless_tildebelowcomb",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icaron.italic=icaron",
+"icircumflex.italic=icircumflex",
+"idblgrave.italic=idblgrave",
+"idieresis.italic=idieresis",
+"idieresisacute.italic=idieresisacute",
+"idotaccent.italic=idotaccent",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ihookabove.italic=ihookabove",
+"iinvertedbreve.italic=iinvertedbreve",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"itilde.italic=itilde",
+"itildebelow.italic=itildebelow",
+"ij.italic=ij",
 "k.italic=k",
+"kcommaaccent.italic=kcommaaccent",
+"kmacronbelow.italic=kmacronbelow",
 "l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"ldotbelow.italic=ldotbelow",
+"ldotbelowmacron.italic=ldotbelowmacron",
+"lj.italic=lj",
+"lmacronbelow.italic=lmacronbelow",
+"lslash.italic=lslash",
 "m.italic=m",
+"mdotaccent.italic=mdotaccent",
+"mdotbelow.italic=mdotbelow",
 "n.italic=n",
+"nacute.italic=nacute",
+"napostrophe.italic=napostrophe",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"ndotaccent.italic=ndotaccent",
+"ndotbelow.italic=ndotbelow",
+"nhookleft.italic=nhookleft",
+"nj.italic=nj",
+"nmacronbelow.italic=nmacronbelow",
+"ntilde.italic=ntilde",
 "r.italic=r",
+"racute.italic=racute",
+"rcaron.italic=rcaron",
+"rcommaaccent.italic=rcommaaccent",
+"rdblgrave.italic=rdblgrave",
+"rdotbelow.italic=rdotbelow",
+"rdotbelowmacron.italic=rdotbelowmacron",
+"rinvertedbreve.italic=rinvertedbreve",
+"rmacronbelow.italic=rmacronbelow",
 "s.italic=s",
+"sacute.italic=sacute",
+"sacutedotaccent.italic=sacutedotaccent",
+"scaron.italic=scaron",
+"scarondotaccent.italic=scarondotaccent",
+"scedilla.italic=scedilla",
+"scircumflex.italic=scircumflex",
+"scommaaccent.italic=scommaaccent",
+"sdotaccent.italic=sdotaccent",
+"sdotbelow.italic=sdotbelow",
+"sdotbelowdotaccent.italic=sdotbelowdotaccent",
 "u.italic=u",
+"uacute.italic=uacute",
+"ubreve.italic=ubreve",
+"ucaron.italic=ucaron",
+"ucircumflex.italic=ucircumflex",
+"udblgrave.italic=udblgrave",
+"udieresis.italic=udieresis",
+"udieresisacute.italic=udieresisacute",
+"udieresiscaron.italic=udieresiscaron",
+"udieresisgrave.italic=udieresisgrave",
+"udieresismacron.italic=udieresismacron",
+"udotbelow.italic=udotbelow",
+"ugrave.italic=ugrave",
+"uhookabove.italic=uhookabove",
+"uhorn.italic=uhorn",
+"uhornacute.italic=uhornacute",
+"uhorndotbelow.italic=uhorndotbelow",
+"uhorngrave.italic=uhorngrave",
+"uhornhookabove.italic=uhornhookabove",
+"uhorntilde.italic=uhorntilde",
+"uhungarumlaut.italic=uhungarumlaut",
+"uinvertedbreve.italic=uinvertedbreve",
+"umacron.italic=umacron",
+"umacrondieresis.italic=umacrondieresis",
+"uogonek.italic=uogonek",
+"uring.italic=uring",
+"utilde.italic=utilde",
+"utildeacute.italic=utildeacute",
 "v.italic=v",
 "w.italic=w",
+"wacute.italic=wacute",
+"wcircumflex.italic=wcircumflex",
+"wdieresis.italic=wdieresis",
+"wgrave.italic=wgrave",
 "x.italic=x",
-"y.italic=y"
+"y.italic=y",
+"yacute.italic=yacute",
+"ycircumflex.italic=ycircumflex",
+"ydieresis.italic=ydieresis",
+"ydotaccent.italic=ydotaccent",
+"ydotbelow.italic=ydotbelow",
+"ygrave.italic=ygrave",
+"yhookabove.italic=yhookabove",
+"ymacron.italic=ymacron",
+"ytilde.italic=ytilde"
 );
 },
 {
@@ -273984,6 +274262,8 @@ instanceInterpolations = {
 m003 = 0.75;
 m004 = 0.25;
 };
+isItalic = 1;
+linkStyle = Regular;
 name = "Regular Italic";
 properties = (
 {
@@ -274019,22 +274299,160 @@ value = 1;
 name = "Rename Glyphs";
 value = (
 "a.italic=a",
+"aacute.italic=aacute",
+"abreve.italic=abreve",
+"abreveacute.italic=abreveacute",
+"abrevedotbelow.italic=abrevedotbelow",
+"abrevegrave.italic=abrevegrave",
+"abrevehookabove.italic=abrevehookabove",
+"abrevetilde.italic=abrevetilde",
+"acaron.italic=acaron",
+"acircumflex.italic=acircumflex",
+"acircumflexacute.italic=acircumflexacute",
+"acircumflexdotbelow.italic=acircumflexdotbelow",
+"acircumflexgrave.italic=acircumflexgrave",
+"acircumflexhookabove.italic=acircumflexhookabove",
+"acircumflextilde.italic=acircumflextilde",
+"adblgrave.italic=adblgrave",
+"adieresis.italic=adieresis",
+"adotbelow.italic=adotbelow",
+"agrave.italic=agrave",
+"ahookabove.italic=ahookabove",
+"ainvertedbreve.italic=ainvertedbreve",
+"amacron.italic=amacron",
+"aogonek.italic=aogonek",
+"aring.italic=aring",
+"aringacute.italic=aringacute",
+"atilde.italic=atilde",
+"ae.italic=ae",
+"aeacute.italic=aeacute",
 "d.italic=d",
+"dcaron.italic=dcaron",
+"dcroat.italic=dcroat",
+"ddotbelow.italic=ddotbelow",
+"dmacronbelow.italic=dmacronbelow",
+"dzcaron.italic=dzcaron",
 "f.italic=f",
 "h.italic=h",
-"idotless.italic=idotless",
+"hbar.italic=hbar",
+"hbrevebelow.italic=hbrevebelow",
+"hcircumflex.italic=hcircumflex",
+"hdotbelow.italic=hdotbelow",
+"hmacronbelow.italic=hmacronbelow",
 "i.italic=i",
+"idotless.italic=idotless",
+"idotless_dotbelowcomb.italic=idotless_dotbelowcomb",
+"idotless_ogonekcomb.italic=idotless_ogonekcomb",
+"idotless_tildebelowcomb.italic=idotless_tildebelowcomb",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icaron.italic=icaron",
+"icircumflex.italic=icircumflex",
+"idblgrave.italic=idblgrave",
+"idieresis.italic=idieresis",
+"idieresisacute.italic=idieresisacute",
+"idotaccent.italic=idotaccent",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ihookabove.italic=ihookabove",
+"iinvertedbreve.italic=iinvertedbreve",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"itilde.italic=itilde",
+"itildebelow.italic=itildebelow",
+"ij.italic=ij",
 "k.italic=k",
+"kcommaaccent.italic=kcommaaccent",
+"kmacronbelow.italic=kmacronbelow",
 "l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"ldotbelow.italic=ldotbelow",
+"ldotbelowmacron.italic=ldotbelowmacron",
+"lj.italic=lj",
+"lmacronbelow.italic=lmacronbelow",
+"lslash.italic=lslash",
 "m.italic=m",
+"mdotaccent.italic=mdotaccent",
+"mdotbelow.italic=mdotbelow",
 "n.italic=n",
+"nacute.italic=nacute",
+"napostrophe.italic=napostrophe",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"ndotaccent.italic=ndotaccent",
+"ndotbelow.italic=ndotbelow",
+"nhookleft.italic=nhookleft",
+"nj.italic=nj",
+"nmacronbelow.italic=nmacronbelow",
+"ntilde.italic=ntilde",
 "r.italic=r",
+"racute.italic=racute",
+"rcaron.italic=rcaron",
+"rcommaaccent.italic=rcommaaccent",
+"rdblgrave.italic=rdblgrave",
+"rdotbelow.italic=rdotbelow",
+"rdotbelowmacron.italic=rdotbelowmacron",
+"rinvertedbreve.italic=rinvertedbreve",
+"rmacronbelow.italic=rmacronbelow",
 "s.italic=s",
+"sacute.italic=sacute",
+"sacutedotaccent.italic=sacutedotaccent",
+"scaron.italic=scaron",
+"scarondotaccent.italic=scarondotaccent",
+"scedilla.italic=scedilla",
+"scircumflex.italic=scircumflex",
+"scommaaccent.italic=scommaaccent",
+"sdotaccent.italic=sdotaccent",
+"sdotbelow.italic=sdotbelow",
+"sdotbelowdotaccent.italic=sdotbelowdotaccent",
 "u.italic=u",
+"uacute.italic=uacute",
+"ubreve.italic=ubreve",
+"ucaron.italic=ucaron",
+"ucircumflex.italic=ucircumflex",
+"udblgrave.italic=udblgrave",
+"udieresis.italic=udieresis",
+"udieresisacute.italic=udieresisacute",
+"udieresiscaron.italic=udieresiscaron",
+"udieresisgrave.italic=udieresisgrave",
+"udieresismacron.italic=udieresismacron",
+"udotbelow.italic=udotbelow",
+"ugrave.italic=ugrave",
+"uhookabove.italic=uhookabove",
+"uhorn.italic=uhorn",
+"uhornacute.italic=uhornacute",
+"uhorndotbelow.italic=uhorndotbelow",
+"uhorngrave.italic=uhorngrave",
+"uhornhookabove.italic=uhornhookabove",
+"uhorntilde.italic=uhorntilde",
+"uhungarumlaut.italic=uhungarumlaut",
+"uinvertedbreve.italic=uinvertedbreve",
+"umacron.italic=umacron",
+"umacrondieresis.italic=umacrondieresis",
+"uogonek.italic=uogonek",
+"uring.italic=uring",
+"utilde.italic=utilde",
+"utildeacute.italic=utildeacute",
 "v.italic=v",
 "w.italic=w",
+"wacute.italic=wacute",
+"wcircumflex.italic=wcircumflex",
+"wdieresis.italic=wdieresis",
+"wgrave.italic=wgrave",
 "x.italic=x",
-"y.italic=y"
+"y.italic=y",
+"yacute.italic=yacute",
+"ycircumflex.italic=ycircumflex",
+"ydieresis.italic=ydieresis",
+"ydotaccent.italic=ydotaccent",
+"ydotbelow.italic=ydotbelow",
+"ygrave.italic=ygrave",
+"yhookabove.italic=yhookabove",
+"ymacron.italic=ymacron",
+"ytilde.italic=ytilde"
 );
 },
 {
@@ -274048,6 +274466,8 @@ instanceInterpolations = {
 m003 = 0.5;
 m004 = 0.5;
 };
+isItalic = 1;
+linkStyle = Medium;
 name = "Medium Italic";
 properties = (
 {
@@ -274084,22 +274504,160 @@ value = 1;
 name = "Rename Glyphs";
 value = (
 "a.italic=a",
+"aacute.italic=aacute",
+"abreve.italic=abreve",
+"abreveacute.italic=abreveacute",
+"abrevedotbelow.italic=abrevedotbelow",
+"abrevegrave.italic=abrevegrave",
+"abrevehookabove.italic=abrevehookabove",
+"abrevetilde.italic=abrevetilde",
+"acaron.italic=acaron",
+"acircumflex.italic=acircumflex",
+"acircumflexacute.italic=acircumflexacute",
+"acircumflexdotbelow.italic=acircumflexdotbelow",
+"acircumflexgrave.italic=acircumflexgrave",
+"acircumflexhookabove.italic=acircumflexhookabove",
+"acircumflextilde.italic=acircumflextilde",
+"adblgrave.italic=adblgrave",
+"adieresis.italic=adieresis",
+"adotbelow.italic=adotbelow",
+"agrave.italic=agrave",
+"ahookabove.italic=ahookabove",
+"ainvertedbreve.italic=ainvertedbreve",
+"amacron.italic=amacron",
+"aogonek.italic=aogonek",
+"aring.italic=aring",
+"aringacute.italic=aringacute",
+"atilde.italic=atilde",
+"ae.italic=ae",
+"aeacute.italic=aeacute",
 "d.italic=d",
+"dcaron.italic=dcaron",
+"dcroat.italic=dcroat",
+"ddotbelow.italic=ddotbelow",
+"dmacronbelow.italic=dmacronbelow",
+"dzcaron.italic=dzcaron",
 "f.italic=f",
 "h.italic=h",
-"idotless.italic=idotless",
+"hbar.italic=hbar",
+"hbrevebelow.italic=hbrevebelow",
+"hcircumflex.italic=hcircumflex",
+"hdotbelow.italic=hdotbelow",
+"hmacronbelow.italic=hmacronbelow",
 "i.italic=i",
+"idotless.italic=idotless",
+"idotless_dotbelowcomb.italic=idotless_dotbelowcomb",
+"idotless_ogonekcomb.italic=idotless_ogonekcomb",
+"idotless_tildebelowcomb.italic=idotless_tildebelowcomb",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icaron.italic=icaron",
+"icircumflex.italic=icircumflex",
+"idblgrave.italic=idblgrave",
+"idieresis.italic=idieresis",
+"idieresisacute.italic=idieresisacute",
+"idotaccent.italic=idotaccent",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ihookabove.italic=ihookabove",
+"iinvertedbreve.italic=iinvertedbreve",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"itilde.italic=itilde",
+"itildebelow.italic=itildebelow",
+"ij.italic=ij",
 "k.italic=k",
+"kcommaaccent.italic=kcommaaccent",
+"kmacronbelow.italic=kmacronbelow",
 "l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"ldotbelow.italic=ldotbelow",
+"ldotbelowmacron.italic=ldotbelowmacron",
+"lj.italic=lj",
+"lmacronbelow.italic=lmacronbelow",
+"lslash.italic=lslash",
 "m.italic=m",
+"mdotaccent.italic=mdotaccent",
+"mdotbelow.italic=mdotbelow",
 "n.italic=n",
+"nacute.italic=nacute",
+"napostrophe.italic=napostrophe",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"ndotaccent.italic=ndotaccent",
+"ndotbelow.italic=ndotbelow",
+"nhookleft.italic=nhookleft",
+"nj.italic=nj",
+"nmacronbelow.italic=nmacronbelow",
+"ntilde.italic=ntilde",
 "r.italic=r",
+"racute.italic=racute",
+"rcaron.italic=rcaron",
+"rcommaaccent.italic=rcommaaccent",
+"rdblgrave.italic=rdblgrave",
+"rdotbelow.italic=rdotbelow",
+"rdotbelowmacron.italic=rdotbelowmacron",
+"rinvertedbreve.italic=rinvertedbreve",
+"rmacronbelow.italic=rmacronbelow",
 "s.italic=s",
+"sacute.italic=sacute",
+"sacutedotaccent.italic=sacutedotaccent",
+"scaron.italic=scaron",
+"scarondotaccent.italic=scarondotaccent",
+"scedilla.italic=scedilla",
+"scircumflex.italic=scircumflex",
+"scommaaccent.italic=scommaaccent",
+"sdotaccent.italic=sdotaccent",
+"sdotbelow.italic=sdotbelow",
+"sdotbelowdotaccent.italic=sdotbelowdotaccent",
 "u.italic=u",
+"uacute.italic=uacute",
+"ubreve.italic=ubreve",
+"ucaron.italic=ucaron",
+"ucircumflex.italic=ucircumflex",
+"udblgrave.italic=udblgrave",
+"udieresis.italic=udieresis",
+"udieresisacute.italic=udieresisacute",
+"udieresiscaron.italic=udieresiscaron",
+"udieresisgrave.italic=udieresisgrave",
+"udieresismacron.italic=udieresismacron",
+"udotbelow.italic=udotbelow",
+"ugrave.italic=ugrave",
+"uhookabove.italic=uhookabove",
+"uhorn.italic=uhorn",
+"uhornacute.italic=uhornacute",
+"uhorndotbelow.italic=uhorndotbelow",
+"uhorngrave.italic=uhorngrave",
+"uhornhookabove.italic=uhornhookabove",
+"uhorntilde.italic=uhorntilde",
+"uhungarumlaut.italic=uhungarumlaut",
+"uinvertedbreve.italic=uinvertedbreve",
+"umacron.italic=umacron",
+"umacrondieresis.italic=umacrondieresis",
+"uogonek.italic=uogonek",
+"uring.italic=uring",
+"utilde.italic=utilde",
+"utildeacute.italic=utildeacute",
 "v.italic=v",
 "w.italic=w",
+"wacute.italic=wacute",
+"wcircumflex.italic=wcircumflex",
+"wdieresis.italic=wdieresis",
+"wgrave.italic=wgrave",
 "x.italic=x",
-"y.italic=y"
+"y.italic=y",
+"yacute.italic=yacute",
+"ycircumflex.italic=ycircumflex",
+"ydieresis.italic=ydieresis",
+"ydotaccent.italic=ydotaccent",
+"ydotbelow.italic=ydotbelow",
+"ygrave.italic=ygrave",
+"yhookabove.italic=yhookabove",
+"ymacron.italic=ymacron",
+"ytilde.italic=ytilde"
 );
 },
 {
@@ -274112,6 +274670,8 @@ value = (
 instanceInterpolations = {
 m004 = 1;
 };
+isItalic = 1;
+linkStyle = Bold;
 name = "Bold Italic";
 properties = (
 {
