@@ -27,6 +27,9 @@ following the format of the other entries, to the start of this section.
 19 May 2026 (Bastien Sozeau)
 - Added real Italics and clean the repo to generate static files
 
+05 Mai 2026 (Bastien Sozeau)
+- Update Italics, add real italics and a stylistic set to keep obliques for certain characters
+
 27 Feb 2025 (Bastien Sozeau)
 - Added a light weight master and two other italic masters for each weight allowing the generation of a variable version. Added small caps to the character set
 
