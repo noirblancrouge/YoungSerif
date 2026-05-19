@@ -1,14 +1,14 @@
 sources:
   - Young-Serif.glyphs
+  - Young-Serif-Italic.glyphs
 axisOrder:
   - wght
-  - ital
 familyName: "Young Serif"
 cleanUp: true
-buildVariable: false
+buildVariable: true
 buildStatic: true
 buildTTF: true
 buildOTF: true
-buildSmallCap: false
+buildSmallCap: true
 autohintTTF: true
 includeSourceFixes: true
