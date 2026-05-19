@@ -9,6 +9,6 @@ buildVariable: true
 buildStatic: true
 buildTTF: true
 buildOTF: true
-buildSmallCap: true
+buildSmallCap: false
 autohintTTF: true
 includeSourceFixes: true
