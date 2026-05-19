@@ -19,6 +19,7 @@ build.ninja
 .Trashes
 ehthumbs.db
 Thumbs.db
+.nova
 
 # Autosaved by application when editing
 ######################
